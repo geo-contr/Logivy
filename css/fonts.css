@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'ogilvysanslight';
+    src: url('../fonts/ogilvysanslight.eot');
+    src: url('../fonts/ogilvysanslight.eot') format('embedded-opentype'),
+         url('../fonts/ogilvysanslight.woff2') format('woff2'),
+         url('../fonts/ogilvysanslight.woff') format('woff'),
+         url('../fonts/ogilvysanslight.ttf') format('truetype'),
+         url('../fonts/ogilvysanslight.svg#ogilvysanslight') format('svg');
+}
+@font-face {
+    font-family: 'ogilvysansregular';
+    src: url('../fonts/ogilvysansregular.eot');
+    src: url('../fonts/ogilvysansregular.eot') format('embedded-opentype'),
+         url('../fonts/ogilvysansregular.woff2') format('woff2'),
+         url('../fonts/ogilvysansregular.woff') format('woff'),
+         url('../fonts/ogilvysansregular.ttf') format('truetype'),
+         url('../fonts/ogilvysansregular.svg#ogilvysansregular') format('svg');
+}
+@font-face {
+    font-family: 'ogilvysansregularitalic';
+    src: url('../fonts/ogilvysansregularitalic.eot');
+    src: url('../fonts/ogilvysansregularitalic.eot') format('embedded-opentype'),
+         url('../fonts/ogilvysansregularitalic.woff2') format('woff2'),
+         url('../fonts/ogilvysansregularitalic.woff') format('woff'),
+         url('../fonts/ogilvysansregularitalic.ttf') format('truetype'),
+         url('../fonts/ogilvysansregularitalic.svg#ogilvysansregularitalic') format('svg');
+}
+@font-face {
+    font-family: 'ogilvyserifbold';
+    src: url('../fonts/ogilvyserifbold.eot');
+    src: url('../fonts/ogilvyserifbold.eot') format('embedded-opentype'),
+         url('../fonts/ogilvyserifbold.woff2') format('woff2'),
+         url('../fonts/ogilvyserifbold.woff') format('woff'),
+         url('../fonts/ogilvyserifbold.ttf') format('truetype'),
+         url('../fonts/ogilvyserifbold.svg#ogilvyserifbold') format('svg');
+}
+@font-face {
+    font-family: 'ogilvyserifregular';
+    src: url('../fonts/ogilvyserifregular.eot');
+    src: url('../fonts/ogilvyserifregular.eot') format('embedded-opentype'),
+         url('../fonts/ogilvyserifregular.woff2') format('woff2'),
+         url('../fonts/ogilvyserifregular.woff') format('woff'),
+         url('../fonts/ogilvyserifregular.ttf') format('truetype'),
+         url('../fonts/ogilvyserifregular.svg#ogilvyserifregular') format('svg');
+}
+@font-face {
+    font-family: 'ogilvyserifregularitalic';
+    src: url('../fonts/ogilvyserifregularitalic.eot');
+    src: url('../fonts/ogilvyserifregularitalic.eot') format('embedded-opentype'),
+         url('../fonts/ogilvyserifregularitalic.woff2') format('woff2'),
+         url('../fonts/ogilvyserifregularitalic.woff') format('woff'),
+         url('../fonts/ogilvyserifregularitalic.ttf') format('truetype'),
+         url('../fonts/ogilvyserifregularitalic.svg#ogilvyserifregularitalic') format('svg');
+}
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../webfonts/fa-brands-400.eot');
+    src: url('../webfonts/fa-brands-400.eot') format('embedded-opentype'),
+         url('../webfonts/fa-brands-400.woff2') format('woff2'),
+         url('../webfonts/fa-brands-400.woff') format('woff'),
+         url('../webfonts/fa-brands-400.ttf') format('truetype'),
+         url('../webfonts/fa-brands-400.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../webfonts/fa-regular-400.eot');
+    src: url('../webfonts/fa-regular-400.eot') format('embedded-opentype'),
+         url('../webfonts/fa-regular-400.woff2') format('woff2'),
+         url('../webfonts/fa-regular-400.woff') format('woff'),
+         url('../webfonts/fa-regular-400.ttf') format('truetype'),
+         url('../webfonts/fa-regular-400.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    src: url('../webfonts/fa-solid-900.eot');
+    src: url('../webfonts/fa-solid-900.eot') format('embedded-opentype'),
+         url('../webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../webfonts/fa-solid-900.woff') format('woff'),
+         url('../webfonts/fa-solid-900.ttf') format('truetype'),
+         url('../webfonts/fa-solid-900.svg') format('svg');
+}

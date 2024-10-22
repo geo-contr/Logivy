@@ -1,0 +1,142 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.section.js-team{
+    overflow: hidden;
+}
+@media(min-width: 992px){
+    .row-small{
+        display: none;
+    }
+    .employee__content-wrapper1.visible, .employee__content-wrapper2.visible, .employee__content-wrapper3.visible, .employee__content-wrapper4.visible, .employee__content-wrapper5.visible, .employee__content-wrapper6.visible, .employee__content-wrapper7.visible, .employee__content-wrapper8.visible, .employee__content-wrapper9.visible, .employee__content-wrapper10.visible, .employee__content-wrapper11.visible, .employee__content-wrapper12.visible, .employee__content-wrapper13.visible{
+        left: calc(100% + 25px);
+        width: calc(72rem - 39px);
+        max-width: calc(100% * 4 + 70px);
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+    /*.employee__content-wrapper6.visible, .employee__content-wrapper7.visible, .employee__content-wrapper8.visible, .employee__content-wrapper9.visible{
+        left: calc(100% + 25px);
+        width: calc(72rem - 39px);
+        max-width: calc(100% * 4 + 71px);
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }*/
+    .employee__portrait1.not_hover:hover .employee__portrait-content, .employee__portrait2.not_hover:hover .employee__portrait-content, .employee__portrait3.not_hover:hover .employee__portrait-content, .employee__portrait4.not_hover:hover .employee__portrait-content, .employee__portrait5.not_hover:hover .employee__portrait-content, .employee__portrait6.not_hover:hover .employee__portrait-content, .employee__portrait7.not_hover:hover .employee__portrait-content, .employee__portrait8.not_hover:hover .employee__portrait-content, .employee__portrait9.not_hover:hover .employee__portrait-content, .employee__portrait10.not_hover:hover .employee__portrait-content, .employee__portrait11.not_hover:hover .employee__portrait-content, .employee__portrait12.not_hover:hover .employee__portrait-content, .employee__portrait13.not_hover:hover .employee__portrait-content{
+        opacity: 0;
+    }
+    .flex-wrapper2, .flex-wrapper3, .flex-wrapper4, .flex-wrapper5, .flex-wrapper7, .flex-wrapper8, .flex-wrapper9, .flex-wrapper10, .flex-wrapper12, .flex-wrapper13{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        z-index: 1;
+        -webkit-transition: 0.5s ease-in-out 0s;
+        -o-transition: 0.5s ease-in-out 0s;
+        transition: 0.5s ease-in-out 0s;
+    }
+    .flex-wrapper2.move, .flex-wrapper7.move, .flex-wrapper12.move{
+        position: absolute;
+        -webkit-transform: translateX(calc(-100% + -24px));
+            -ms-transform: translateX(calc(-100% + -24px));
+                transform: translateX(calc(-100% + -24px));
+        z-index: 1;
+    }
+    .flex-wrapper3.move, .flex-wrapper8.move, .flex-wrapper13.move{
+        position: absolute;
+        -webkit-transform: translateX(calc(-100% * 2 + -24px * 2));
+            -ms-transform: translateX(calc(-100% * 2 + -24px * 2));
+                transform: translateX(calc(-100% * 2 + -24px * 2));
+        z-index: 1;
+    }
+    .flex-wrapper4.move, .flex-wrapper9.move{
+        position: absolute;
+        -webkit-transform: translateX(calc(-100% * 3 + -24px * 3));
+            -ms-transform: translateX(calc(-100% * 3 + -24px * 3));
+                transform: translateX(calc(-100% * 3 + -24px * 3));
+        z-index: 1;
+    }
+    .flex-wrapper5.move, .flex-wrapper10.move{
+        position: absolute;
+        -webkit-transform: translateX(calc(-100% * 4 + -24px * 4));
+            -ms-transform: translateX(calc(-100% * 4 + -24px * 4));
+                transform: translateX(calc(-100% * 4 + -24px * 4));
+        z-index: 1;
+    }
+}
+@media(max-width: 991px){
+    .row-large{
+        display: none;
+    }
+    .row-small{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .employee__content-wrapper1.visible, .employee__content-wrapper3.visible, .employee__content-wrapper5.visible, .employee__content-wrapper7.visible, .employee__content-wrapper9.visible, .employee__content-wrapper11.visible, .employee__content-wrapper13.visible{
+        left: 0;
+        width: calc(60rem - 32px);
+        max-width: calc(100% * 2 + 23px);
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+    .employee__content-wrapper2.visible, .employee__content-wrapper4.visible, .employee__content-wrapper6.visible, .employee__content-wrapper8.visible, .employee__content-wrapper10.visible, .employee__content-wrapper12.visible{
+        left: calc(-100% - 23px);
+        width: calc(60rem - 32px);
+        max-width: calc(100% * 2 + 23px);
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+    .flex-wrapper2{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        z-index: 1;
+        -webkit-transition: 0.5s ease-in-out 0s;
+        -o-transition: 0.5s ease-in-out 0s;
+        transition: 0.5s ease-in-out 0s;
+    }
+    .employee__column--content {
+        font-size: .96875rem;
+        font-size: calc(.9375rem + .225 * ((100vw - 30.0625rem) / 49.9375));
+    }
+    .employee__content-name {
+        font-size: calc(.9375rem + .225*((100vw - 30.0625rem) / 49.9375));
+    }
+    .employee__content-job{
+        font-size: calc(.9375rem + .225*((100vw - 30.0625rem) / 49.9375));
+    }
+    .employee__column-header {
+        font-size: .96875rem;
+        font-size: calc(.9375rem + .225 * ((100vw - 30.0625rem) / 49.9375));
+    }
+    .employee__column--links a, .employee__column--links a:focus, .employee__column--links a:visited, .employee__column--content a, .employee__column--content a:focus, .employee__column--content a:visited, .employee__column--links li{
+        font-size: calc(.9375rem + .225 * ((100vw - 30.0625rem) / 49.9375));
+    }
+}
+@media(max-width: 959px){
+    .employee__content{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+@media(max-width: 850px){
+    .site-nav__item a.is-active {
+        font-family: "ogilvysansregular";
+        font-style: normal;
+    }
+}
+.employee__column--content{
+    font-family: "ogilvysansregular";
+}
+.employee__column--links {
+    font-family: "ogilvysansregular";
+    line-height: 1.1;
+}

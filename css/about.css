@@ -1,0 +1,147 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.section--v-center {
+    top: 0;
+    height: auto;
+}
+.site-nav__list a {
+    color: #fff;
+    text-decoration: none;
+}
+@media (min-width: 850px) {
+    .branding__logo{
+        /*width: calc(103px + 54*((100vw - 480px) / 960)) !important;*/
+        color: #fff;
+    }
+    .branding__logo.change{
+        color: #eb3f43;
+    }
+}
+.container_careers .branding__logo{
+    color: #fff;
+}
+.container_careers .branding__logo.change{
+    color: #eb3f43;
+}
+.branding svg{
+    /*width: calc(103px + 54*((100vw - 480px) / 960)) !important;*/
+}
+.contact-card__header-wrapper button{
+    /*position: relative;*/
+    width: 1rem;
+    height: 1rem;
+}
+.contact-card__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media(min-width: 960px){
+    .contact .cult-card__content, .contact .brand-card__content, .contact .exp-card__content, .contact .comms-card__content, .contact .impact-card__content, .contact .adtech-card__content, .contact .dyn-card__content{
+        display: none;
+        position: absolute;
+        height: auto;
+    }
+    /*.cult_Zindex.open, .brand_Zindex.open, .exp_Zindex.open, .comms_Zindex.open, .impact_Zindex.open, .adtech_Zindex.open, .dyn_Zindex.open{
+        z-index: 0!important;
+    }*/
+}
+@media(max-width: 959px){
+    .contact .cult-card__content, .contact .brand-card__content, .contact .exp-card__content, .contact .comms-card__content, .contact .impact-card__content, .contact .adtech-card__content, .contact .dyn-card__content{
+        display: none;
+        position: relative!important;
+        height: auto;
+    }
+    /*.cult_Zindex.open, .brand_Zindex.open, .exp_Zindex.open, .comms_Zindex.open, .impact_Zindex.open, .adtech_Zindex.open, .dyn_Zindex.open{
+        z-index: 0!important;
+    }*/
+    .capabilities-section .contact-card__content div p {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1261px) {
+    footer .footer-right-nav li.country-list.active {
+        z-index: 11;
+    }
+}
+.see_work:hover{
+    color: #231f20;
+}
+@media (min-width: 481px) and (max-width: 850px) {
+    .burger {
+        color: #fff;
+    }
+}
+@media (min-width: 851px) and (max-width: 1100px) {
+    .burger {
+        color: #fff;
+    }
+    .burger.change {
+        color: #231f20;
+    }
+}
+@media(max-width: 1100px){
+    .site-nav__list a{
+        color: #231f20;
+    }
+}
+@media(max-width: 850px){
+    .site-nav__item a.is-active {
+        font-family: "ogilvysansregular";
+        font-style: normal;
+    }
+    .hero--red .section__mask::before {
+        background-color: #eb3f43;
+    }
+}
+@media(max-width: 480px){
+    .burger {
+        color: #fff;
+    }
+    .is-active.contact-card--office .contact-card__content {
+        padding-bottom: 0;
+    }
+}
+@media(min-width: 1101px){
+    .site-nav__list a.change{
+        color: #231f20;
+    }
+    .site-nav__list a.is-active{
+        color: #eb3f43;
+    }
+    .container_careers .site-nav__list a.is-active{
+        color: #fff;
+    }
+    .container_careers .site-nav__list a{
+        color: #000;
+    }
+    .container_careers .site-nav__list a:hover{
+        color: #fff;
+    }
+    .site-nav__list a.is-active.change{
+        color: #eb3f43;
+    }
+}
+
+.section--Capabilities.has-sticky::after {
+    height: 0;
+}
+.clear-filters a{
+    color: #EB3F43;
+}
+
+@media(min-width: 1025px) and (max-width: 1279px){
+    .select-dropdown__button .zmdi-chevron-down, .select-dropdown__button1 .zmdi-chevron-down, .select-dropdown__button2 .zmdi-chevron-down, .select-dropdown__button3 .zmdi-chevron-down{
+        top: 32px;
+    }
+}
+@media(max-width: 1024px){
+    .select-dropdown__button .zmdi-chevron-down, .select-dropdown__button1 .zmdi-chevron-down, .select-dropdown__button2 .zmdi-chevron-down, .select-dropdown__button3 .zmdi-chevron-down{
+        top: 19px;
+    }
+}
