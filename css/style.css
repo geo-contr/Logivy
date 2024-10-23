@@ -734,8 +734,12 @@ footer p{
 }
 /*end of trigger-icon*/
 
-
-
+@media(min-width: 1440px){
+    .branding__logo {
+        min-width: 9.8rem;
+        width: 9.8rem;
+    }
+}
 @media(min-width: 481px){
     .branding {
         --logo-scroll-position: 0%;
