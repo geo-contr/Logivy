@@ -145,3 +145,8 @@
         top: 19px;
     }
 }
+.hero--main-section h1.outline-heading {
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-style: normal;
+}
