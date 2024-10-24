@@ -150,3 +150,16 @@
     font-weight: bold;
     font-style: normal;
 }
+@media(min-width: 60em){
+    .capabilities-link__wrapper {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
+.capabilities-link__wrapper a{
+    font-family: "ogilvysansregular";
+}
+.capabilities-link__wrapper a:hover{
+    color: #231f20;
+}
+
