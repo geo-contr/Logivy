@@ -162,4 +162,6 @@
 .capabilities-link__wrapper a:hover{
     color: #231f20;
 }
-
+.careers--listings-title, .careers--listings-loc, .select-dropdown__button, .select-dropdown__button1, .select-dropdown__button2, .select-dropdown__button3, .select-dropdown__list-item, .select-dropdown__list-item1, .select-dropdown__list-item2, .select-dropdown__list-item3{
+    font-family: "ogilvysansregular";
+}
