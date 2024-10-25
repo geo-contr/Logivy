@@ -40,6 +40,20 @@ $(document).ready(function() {
      .addTo(controller);
  });
 
+$(document).ready(function() {
+     // Initialize ScrollMagic Controller
+     var controller = new ScrollMagic.Controller();
+
+     // Create a ScrollMagic Scene
+     var classToggleScene = new ScrollMagic.Scene({
+        triggerElement: ".careers-work-section-wrapper",
+        triggerHook: 0.08, // Adjust triggerHook as needed
+        duration: 0 // Duration of 0 means it will happen immediately when triggered
+     })
+     .setClassToggle(".site-nav__list .no-active", "change") // Add the change class to .burger
+     .addTo(controller);
+ });
+
 
 function resetConnectScroll() {
     $('.connect-crm-wrap').scrollTop(0); // Ensure modal content is scrolled to the top
@@ -303,7 +317,6 @@ function closeAllDropdowns() {
     $('.select-dropdown__button1, .select-dropdown__button, .select-dropdown__button2, .select-dropdown__button3').attr('aria-expanded', 'false');
 }
 
-
 // Function to filter job listings with two or more attr
 function filterJobs() {
     var selectedRegion = $('.select-dropdown__button1').attr('data-value');
@@ -325,8 +338,9 @@ function filterJobs() {
         // Get job details
         var jobCompany = $(this).find('.lg25.careers--listings-loc').first().text(); // Company name is assumed to be the first div
         var jobLocation = $(this).find('.lg25.careers--listings-loc').last().text(); // Location is assumed to be the last div
-        var jobRegion = $(this).find('.lg25.careers--listings-loc').first().text() + ', ' + $(this).find('.lg25.careers--listings-loc').last().text();
-        var jobDepartment = $(this).find('.lg25.careers--listings-loc').first().text() + ', ' + $(this).find('.lg25.careers--listings-loc').last().text();
+        var jobRegion = $(this).find('.lg25.careers--listings-loc').first().text() + ', ' + $(this).find('.last-text').text();
+        var jobDepartment = $(this).find('.lg25.careers--listings-loc').first().text() + ', ' + $(this).find('.last-text').text();
+        // var jobDepartment = $(this).find('.lg25.careers--listings-loc').first().text() + ', ' + $(this).find('.last-text').text();
         // var jobDepartment = $(this).find('.lg25.careers--listings-loc').last().text(); // Adjust this according to your HTML structure
         // var jobDepartment = $(this).find('.lg50.careers--listings-title').text(); // Adjust this according to your HTML structure
         
@@ -365,7 +379,6 @@ function filterJobs() {
     });
 }
 
-
 // Toggle dropdowns and assign selection behavior
 $('.select-dropdown__button1').click(function (e) {
     e.stopPropagation(); 
@@ -396,77 +409,14 @@ $('.select-dropdown__button3').click(function (e) {
 });
 
 
-
-
-// Update button text and filter jobs on selection with one attr
-// $('.select-dropdown__list-item1').click(function () {
-//     var selectedValue = $(this).attr('data-value');
-//     $('.select-dropdown__button1 span').text($(this).text());
-//     $('.select-dropdown__button1').attr('data-value', selectedValue);
-//     $('.select-dropdown__list1').removeClass('active');
-//     filterJobs();
-// });
-
-// 
-
-// Update button text and filter jobs on selection with two attr
-$('.select-dropdown__list-item1').click(function () {
-    var selectedValue = $(this).attr('data-value');
-    var selectedRegion = $(this).attr('data-region-selected'); // Get the data-region-selected attribute
-
-    // Update the dropdown button with the selected values
-    $('.select-dropdown__button1 span').text($(this).text());
-    $('.select-dropdown__button1').attr('data-value', selectedValue);
-    $('.select-dropdown__button1').attr('data-region-selected', selectedRegion); // Set the region-selected attribute
-    $('.select-dropdown__list1').removeClass('active');
-    
-    filterJobs(); // Call the filtering function
-});
-
-$('.select-dropdown__list-item').click(function () {
-    var selectedValue = $(this).attr('data-value');
-    $('.select-dropdown__button span').text($(this).text());
-    $('.select-dropdown__button').attr('data-value', selectedValue);
-    $('.select-dropdown__list').removeClass('active');
-    filterJobs();
-});
-
-
-$('.select-dropdown__list-item2').click(function () {
-    var selectedValue = $(this).attr('data-value');
-    var selectedDepartment = $(this).attr('data-region'); // Get the data-region attribute
-
-    // Update the dropdown button with the selected values
-    $('.select-dropdown__button2 span').text($(this).text());
-    $('.select-dropdown__button2').attr('data-value', selectedValue);
-    $('.select-dropdown__button2').attr('data-region', selectedDepartment); // Set the region-selected attribute
-    $('.select-dropdown__list2').removeClass('active');
-    
-    filterJobs(); // Call the filtering function
-});
-
-// $('.select-dropdown__list-item2').click(function () {
-//     var selectedValue = $(this).attr('data-value');
-//     $('.select-dropdown__button2 span').text($(this).text());
-//     $('.select-dropdown__button2').attr('data-value', selectedValue);
-//     $('.select-dropdown__list2').removeClass('active');
-//     filterJobs();
-// });
-
-$('.select-dropdown__list-item3').click(function () {
-    var selectedValue = $(this).attr('data-value');
-    $('.select-dropdown__button3 span').text($(this).text());
-    $('.select-dropdown__button3').attr('data-value', selectedValue);
-    $('.select-dropdown__list3').removeClass('active');
-    filterJobs();
-});
-
 // Reset all filters except the currently selected one
+// Updated resetFilters to handle region-selected and region properly
 function resetFilters(exceptButton) {
-    // Reset all filters except the currently selected one
     $('.select-dropdown__button1, .select-dropdown__button, .select-dropdown__button2, .select-dropdown__button3').each(function() {
         if (!$(this).is(exceptButton)) {
             $(this).attr('data-value', 'All');
+            $(this).removeAttr('data-region-selected'); // Clear the data-region-selected
+            $(this).removeAttr('data-region'); // Clear the data-region
             $(this).find('span').text('All');
         }
     });

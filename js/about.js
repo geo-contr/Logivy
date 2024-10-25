@@ -441,3 +441,32 @@ $('body').click(function (e) {
 $('.contact-card__content-wrapper').click(function (e) {
     e.stopPropagation();
 });
+
+
+
+
+$(document).ready(function() {
+  $('.contact__subnav-item a').click(function(event) {
+    // Prevent the default anchor click behavior
+    event.preventDefault();
+
+    // Get the filter value from the clicked item's data-filter attribute
+    var filterValue = $(this).parent().data('filter');
+
+    // Find all itemBox_ab elements
+    var $items = $('.itemBox_ab');
+
+    // Hide all items
+    $items.stop(true, true).fadeOut(200);
+
+    // Show the filtered item(s) based on the clicked filter value
+    var $filteredItems = $items.filter('.' + filterValue);
+    setTimeout(function() {
+      $filteredItems.fadeIn(300);
+    }, 200);
+
+    // Update 'is-active' class on navigation links
+    $('.contact__subnav-item a').removeClass('is-active');
+    $(this).addClass('is-active');
+  });
+});
