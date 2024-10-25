@@ -111,6 +111,9 @@
     .site-nav__list a.change{
         color: #231f20;
     }
+    .site-nav__list a.change:hover{
+        color: #eb3f43;
+    }
     .site-nav__list a.is-active{
         color: #eb3f43;
     }
