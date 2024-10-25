@@ -126,6 +126,9 @@
     .site-nav__list a.is-active.change{
         color: #eb3f43;
     }
+    .no-active.change:hover{
+        color: #eb3f43!important;
+    }
 }
 
 .section--Capabilities.has-sticky::after {
