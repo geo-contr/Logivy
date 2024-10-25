@@ -244,3 +244,6 @@ body.has-modal [role=banner], body.has-feed-modal [role=banner], body.has-feed-m
         height: auto;
     }
 }
+.feed__category {
+    font-family: "ogilvysansregular";
+}
