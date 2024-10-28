@@ -251,6 +251,6 @@ body.has-modal [role=banner], body.has-feed-modal [role=banner], body.has-feed-m
 .feed__category {
     font-family: "ogilvysansregular";
 }
-.feed__title{
+.feed__title, .post__title{
     font-family: "ogilvyserifregular";
 }
