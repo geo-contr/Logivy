@@ -254,3 +254,6 @@ body.has-modal [role=banner], body.has-feed-modal [role=banner], body.has-feed-m
 .feed__title, .post__title{
     font-family: "ogilvyserifregular";
 }
+.post__author-content p{
+    font-family: "ogilvyserifregularitalic";
+}
