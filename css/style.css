@@ -1111,3 +1111,7 @@ select option {
     color: #231f20;
     text-decoration: underline;
 }
+.hero p{
+    font-family: "ogilvyserifregular";
+}
+
