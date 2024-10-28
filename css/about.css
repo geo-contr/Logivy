@@ -162,7 +162,7 @@
         margin-bottom: 100px;
     }
 }
-.capabilities-link__wrapper a{
+.capabilities-link__wrapper a, .careers-colout-full h2, .careers-colout-full p{
     font-family: "ogilvysansregular";
 }
 .capabilities-link__wrapper a:hover{
