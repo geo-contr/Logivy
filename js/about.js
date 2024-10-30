@@ -470,3 +470,78 @@ $(document).ready(function() {
     $(this).addClass('is-active');
   });
 });
+
+
+
+
+
+
+
+
+ $('.cookies_ani-border.active').click(function (e) {
+    $('.cookies_ani-border.active').toggleClass('is_active');
+ });
+$('#performance-cookies-id').click(function (e) {
+    $('#performance-cookies-id').toggleClass('is_active');
+ });
+
+// Change text without animation
+// $('#functional_cookies_id').on("click", function() {
+//     const p = $(this).find("p"); // Select the <p> inside #functional_cookies_id
+//     if (p.text().trim() === "On") {
+//         p.text("Off");
+//     } else {
+//         p.text("On");
+//     }
+// });
+
+// Change text with animation (fade-out)
+// $('#functional_cookies_id').on("click", function() {
+//     const p = $(this).find("p"); // Select the <p> inside #functional_cookies_id
+
+//     // Add the fade-out class to trigger the animation
+//     p.addClass("fade-out");
+
+//     // Wait for the fade-out animation to complete, then change the text and fade back in
+//     setTimeout(() => {
+//         // Toggle the text between "On" and "Off"
+//         p.text(p.text().trim() === "On" ? "Off" : "On");
+
+//         // Remove fade-out to fade back in
+//         p.removeClass("fade-out");
+//     }, 200); // Matches the transition duration in CSS (0.3s)
+// });
+
+// Change text with animation (opacity)
+$('#functional_cookies_id').on("click", function() {
+    const p = $(this).find("p"); // Select the <p> inside #functional_cookies_id
+
+    // Set opacity to 0 to fade out
+    p.css("opacity", "0");
+
+    // Wait for the fade-out animation to complete, then change the text and fade back in
+    setTimeout(() => {
+        // Toggle the text between "On" and "Off"
+        p.text(p.text().trim() === "On" ? "Off" : "On");
+
+        // Set opacity back to 1 to fade in
+        p.css("opacity", "1");
+    }, 200); // Matches the transition duration in CSS (0.3s)
+});
+
+$('#performance-cookies-id').on("click", function() {
+    const p = $(this).find("p"); // Select the <p> inside #functional_cookies_id
+
+    // Set opacity to 0 to fade out
+    p.css("opacity", "0");
+
+    // Wait for the fade-out animation to complete, then change the text and fade back in
+    setTimeout(() => {
+        // Toggle the text between "On" and "Off"
+        p.text(p.text().trim() === "On" ? "Off" : "On");
+
+        // Set opacity back to 1 to fade in
+        p.css("opacity", "1");
+    }, 200); // Matches the transition duration in CSS (0.3s)
+});
+
