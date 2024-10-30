@@ -1114,4 +1114,15 @@ select option {
 .hero p{
     font-family: "ogilvyserifregular";
 }
-
+.animated-text/*, #performance-cookies-id .animated-text*/{
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; /* Controls the animation duration */
+    opacity: 1;
+}
+.post__title{
+    font-family: "ogilvyserifregular";
+}
+.connect-form input[type="text"], .connect-form input[type="email"] {
+    font-family: "ogilvysansregular";
+}
