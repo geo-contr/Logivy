@@ -1126,3 +1126,7 @@ select option {
 .connect-form input[type="text"], .connect-form input[type="email"] {
     font-family: "ogilvysansregular";
 }
+#performance-cookies-id.is_active p{
+    font-family: "ogilvyserifregularitalic";
+    color: #eb3f43;
+}
