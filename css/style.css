@@ -157,6 +157,11 @@ footer p{
         margin-top: 12rem;
     }
 }
+@media(min-width: 1023px){
+    .custom-select-trigger, .custom-select-trigger1{
+        font-size: 22px;
+    }
+}
 @media(min-width: 1280px){
     .navbar{
         width: 100%;
@@ -489,6 +494,11 @@ footer p{
         width: auto;
     }
 }
+@media(max-width: 1023px){
+    .custom-select-trigger, .custom-select-trigger1{
+        font-size: 18px;
+    }
+}
 @media(max-width: 943px){
     .Country-list.open{
         height: 72px;
@@ -564,6 +574,9 @@ footer p{
     }
     .site-footer__primary-nav li, .social-nav li, .social-nav li + li {
         font-size: 0.85rem;
+    }
+    .custom-select-trigger, .custom-select-trigger1{
+        font-size: 16px;
     }
 }
 @media(max-width: 471.98px){
@@ -1020,7 +1033,6 @@ select option {
     background: url(../img/arrow-d.jpg) no-repeat right center;
 }
 .custom-select-trigger, .custom-select-trigger1 {
-    font-size: 22px;
     color: #999;
     background-color: white;
     /*border: 1px solid #ccc;*/
