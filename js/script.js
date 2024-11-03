@@ -1149,3 +1149,7 @@ $('.location-list-open').click(function (e) {
         $('.social-nav-list').toggle(500);
     }
 });
+function reloadPage() {
+    // Forces the page to reload
+    location.reload();
+}
