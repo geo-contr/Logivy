@@ -1142,3 +1142,22 @@ select option {
     font-family: "ogilvyserifregularitalic";
     color: #eb3f43;
 }
+@media(min-width: 768px){
+    .sitemap_body{
+        overflow-y: hidden;
+    }
+}
+.sitemap a:hover{
+    color: #231f20;
+}
+@media (max-height: 480px) {
+    .branding__logo {
+        --logo-scroll-width: 50vw!important;
+        min-width: calc(102px + 54 * ((100vw - 480px) / 960));
+        width: calc(102px + 54 * ((100vw - 480px) / 960))!important;
+    }
+    a.branding{
+        --logo-scroll-position: -50%;
+        --logo-scroll-margin: 50px;
+    }
+}
