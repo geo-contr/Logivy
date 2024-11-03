@@ -747,6 +747,18 @@ footer p{
 }
 /*end of trigger-icon*/
 
+/*როდესაც მინდა work-და home-ი სხვადასხვა იყოს*/
+@media(min-width: 280px) and (max-width: 1100px){
+    .site-nav__list a.is-active, .site-nav__list a:hover, .site-nav__list a:focus {
+        color: #eb3f43!important;
+    }
+}
+@media(min-width: 1101px){
+    .site-nav__list a.work-active:hover{
+        color: #fff!important;
+    }
+}
+/*End of როდესაც მინდა work-და home-ი სხვადასხვა იყოს*/
 @media(min-width: 1440px){
     .branding__logo {
         min-width: 9.8rem;
