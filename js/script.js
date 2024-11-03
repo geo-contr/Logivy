@@ -47,11 +47,18 @@ if (mediaQuery.matches) {
         // Create a GSAP timeline for the color change animation
         var colorTimeline = gsap.timeline();
 
-        // Add the color change animation to the timeline
-        colorTimeline.to(".branding__logo, .site-nav__list a.is-active", {
+        // Add the color change animation to the timeline როდესაც არ მინდა work-და home-ი სხვადასხვა იყოს
+        // colorTimeline.to(".branding__logo, .site-nav__list a.is-active", {
+        //     color: "red",
+        //     duration: 0.1 // duration in seconds for the color change
+        // });
+
+        // როდესაც მინდა work-და home-ი სხვადასხვა იყოს
+        colorTimeline.to(".branding__logo, .site-nav__list a.work-active", {
             color: "red",
             duration: 0.1 // duration in seconds for the color change
         });
+        // End of როდესაც მინდა work-და home-ი სხვადასხვა იყოს
 
         // Create the scene for the color change animation
         var colorScene = new ScrollMagic.Scene({
@@ -71,6 +78,16 @@ if (mediaQuery.matches) {
         })
         .setClassToggle(".site-nav__list a", "has-red-nav") // Add the has-red-nav class to .site-nav__list a
         .addTo(controller);
+
+        // როდესაც მინდა work-და home-ი სხვადასხვა იყოს
+        var activeClassScene = new ScrollMagic.Scene({
+            triggerElement: "#work",
+            triggerHook: 0.5, // Adjust triggerHook as needed
+            duration: 0 // Duration of 0 means it will happen immediately when triggered
+        })
+        .setClassToggle(".site-nav__list a.work-active", "is-active") // Add the is-active class to .site-nav__list a.work-active
+        .addTo(controller);
+        // End of როდესაც მინდა work-და home-ი სხვადასხვა იყოს
 
 
         // Calculate the duration dynamically
