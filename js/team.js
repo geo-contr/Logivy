@@ -134,3 +134,16 @@ $('.employee__close-icon').click(function(){
     $('.flex-wrapper2, .flex-wrapper3, .flex-wrapper4, .flex-wrapper5, .flex-wrapper7, .flex-wrapper8, .flex-wrapper9, .flex-wrapper10, .flex-wrapper12, .flex-wrapper13').removeClass('move');
 });
 
+
+
+
+
+
+$('.info-section-open').click(function(event){
+    event.preventDefault(); // Prevent default action
+    event.stopPropagation(); // Stop event from bubbling up
+    
+    $('.info-section-open').toggleClass('is-active');
+    $('.portfolio__info').slideToggle(350);
+});
+

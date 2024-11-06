@@ -545,3 +545,10 @@ $('#performance-cookies-id').on("click", function() {
     }, 200); // Matches the transition duration in CSS (0.3s)
 });
 
+
+
+// Direct Scroll to Section
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.visibility = "visible";
+// Rest of the scroll code here
+});

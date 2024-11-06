@@ -55,7 +55,7 @@ if (mediaQuery.matches) {
 
         // როდესაც მინდა work-და home-ი სხვადასხვა იყოს
         colorTimeline.to(".branding__logo, .site-nav__list a.work-active", {
-            color: "red",
+            color: "rgb(235,63,67)",
             duration: 0.1 // duration in seconds for the color change
         });
         // End of როდესაც მინდა work-და home-ი სხვადასხვა იყოს
@@ -1149,7 +1149,15 @@ $('.location-list-open').click(function (e) {
         $('.social-nav-list').toggle(500);
     }
 });
+
 function reloadPage() {
     // Forces the page to reload
     location.reload();
 }
+
+
+// Direct Scroll to Section
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.visibility = "visible";
+// Rest of the scroll code here
+});

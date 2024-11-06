@@ -718,3 +718,10 @@ $('body').click(function (e) {
 $('.contact-card__content-wrapper').click(function (e) {
     e.stopPropagation();
 });
+
+
+// Direct Scroll to Section
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.visibility = "visible";
+// Rest of the scroll code here
+});
