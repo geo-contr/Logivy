@@ -1159,6 +1159,6 @@ function reloadPage() {
 // Direct Scroll to Section
 document.addEventListener("DOMContentLoaded", function() {
     document.body.style.visibility = "visible";
-    document.getElementById("work").style.visibility = "visible";
+    // document.getElementById("work").style.visibility = "visible";
 // Rest of the scroll code here
 });
