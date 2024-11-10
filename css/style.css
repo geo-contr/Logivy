@@ -22,22 +22,6 @@ body{
     font-family: "ogilvysansregular", "ogilvysanslight", "ogilvysansregularitalic", "ogilvyserifregular", "ogilvyserifbold", "ogilvyserifregularitalic";
     /*animation: load .25s .25s both;*/
 }
-@-webkit-keyframes load{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes load{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 ul{
     list-style: none;
     margin: 0;
