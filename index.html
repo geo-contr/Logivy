@@ -1,514 +1,2845 @@
 <!DOCTYPE html>
-<html class="js no-touch csstransitions filereader desktop landscape overthrow-enabled ng-scope to-landing cookie-open" data-ng-app="3xn">
+<html>
 <head>
-	<title>4XN Architects</title>
+	<title>Vilgo</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- საიტის აიკონი, სადაც ჩატვირთვის ადგილას შეიძლება გამოჩნდეს ლოგო ან რაიმე ნიშანი. სამი მჭირდება ანდროიდზე რომ გამოჩნდეს? -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180.png">
 	<link rel="icon" sizes="32x32" type="image/png" href="img/favicon_32.png">
 	<link rel="icon" sizes="16x16" type="image/png" href="img/favicon_16.png">
 	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"> <!-- The latest version -->
-	<link rel="stylesheet" type="text/css" href="css/4xn.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/baguetteBox.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/prin8w.css">
+	<link rel="stylesheet" type="text/css" href="css/principal54yo.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"> --> <!-- The latest version -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body id="trigger-icon">
-	<div id="body-img-div">
-		<img src="img/QQT_photo_Adam_Mork_500_H.webp" id="body-img">
-		<img src="img/logo-frontpage.svg" id="logo-frontpage">
-	</div>
-	<div id="AppWrapper">
-		<header id="Header" data-ng-controller="HeaderCtrl" class="ng-scope">
-			<div class="overlay-menu"></div>
-			<div class="nav active">
-				<div class="container-fluid">
-					<a href="index.html" class="logo-3xn" data-ui-sref="pageLanding">
-						<img src="img/logo-3xn.svg">
-					</a>
-					<div class="wrap-bt-menu">
-						<div class="icon-menu">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+<body>
+  	<header role="banner">
+  		<div class="container">
+  			<a href="index.html" title="Logivy Logo" class="branding branding--splash" aria-label="Ogilvy Logo">
+  				<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 273.7" class="branding__logo" style="--logo-scroll-width: 1vw; width: calc(41vw - var(--logo-scroll-width));">
+  	  			<path d="M159.5,8.8c-53.6,0-99.1,38.3-99.1,97.2c0,53,40.5,95,98.5,95c53.5,0,99.1-38.3,99.1-97.2C258,50.9,217.5,8.8,159.5,8.8z
+  						M159.5,189.6c-34.9,0-59.9-35.7-59.9-84.9c0-47.1,23.7-84.4,59.4-84.4c34.9,0,59.9,35.7,59.9,84.9
+  						C218.8,152.3,195.1,189.6,159.5,189.6z M649,81.7v8l10.7,2.1c3.7,0.8,4.8,3.7,2.4,9.6l-24.6,59.2c-1.1,2.4-2.4,2.4-3.2,0l-22.9-59.1
+  						c-2.4-6.1-1.1-8.8,2.7-9.6l10.6-2.1v-8h-94.8v8l10.7,2.1c3.7,0.8,5.1,3.7,2.7,9.6l-23.7,62.3c-1.1,2.4-2.4,2.4-3.2,0l-24-62.3
+  						c-2.1-6.1-1.1-8.8,2.7-9.6l10.6-2.1v-8h-60.2V90l5.9,1.3c4,0.8,6.4,2.9,8,6.7l40.7,100.1h18.4L559.2,98c2.1-5.3,4.5-7.5,8.8-7.5h1.6
+  						c3.5,0,6.1,1.3,8.3,6.4l42.6,103.9L609.1,228c-7.5,18.1-13,21.3-20,21.3c-2.9,0-6.1-0.5-9.3-0.5c-8.3,0-13.3,5.9-13.3,12.2
+  						c0,7.2,5.9,12.3,15.2,12.3c13.3,0,26.4-10.7,37.3-36.2L677,101c2.7-6.1,6.1-8.8,11.7-9.9l5.8-1.1v-8.3H649z M341.6,187.7l-44.5,5.6
+  						c-14.6,1.9-19.2-2.9-19.2-10.4c0-8.8,9.6-15.7,42.9-15.7h0.5c24.2,0,52.7-14.6,52.7-46.3c0-10.1-3.7-19.4-10.7-26.9
+  						c-2.4-5.2-3.5-10.8-3.2-16.5c0-23.4,16-36.7,32.5-36.7c6.9,0,9.1,1.1,9.1,5.9c0,1.3-0.3,2.4-0.3,4c0,8.3,6.9,16,16.8,16
+  						c10.1,0,16.5-8,16.5-16.8c0-13.3-12-23.2-34.1-23.2c-30.4,0-53.8,19.7-53.8,49.8c0,2.4,0.3,4.3,0.3,6.1c-7.9-3.2-16.3-4.9-24.8-4.8
+  						c-24,0-52.7,14.6-52.7,46.3c0,14.6,8.3,28.2,22.6,36.2c-21.3,2.9-33.5,14.4-33.5,32.2c0,18.1,14.4,31.2,41.3,28l38.9-4.8
+  						c19.4-2.4,25.8,4.5,25.8,14.6c0,17.6-16.5,31.7-42.9,31.7c-21,0-28.8-7.5-28.8-18.1l0.3-5.3c0-6.4-4-10.9-10.4-11.2
+  						c-7.5,0-12,5.3-12,13c0,17.6,16.8,33.3,51.1,33.3c38.6,0,63.1-25,63.1-53.8C385.2,197,366.9,184.5,341.6,187.7L341.6,187.7z
+  						 M321.6,87.3c12.5,0,22.6,14.1,22.6,35.7c0,18.6-8.5,34.6-21.8,34.6c-12.8,0-22.9-14.1-22.9-35.7C299.5,103.6,308,87.3,321.6,87.3
+  						L321.6,87.3z M400.2,188.3l-10.9,1.3v8.5h58.8v-9.4l-8.1-0.1c-3.5,0-5.9-2.1-5.9-5.1V77.2l-46.9,12v5.6l13.3,4.3
+  						c2.1,0.8,2.9,2.4,2.9,4.5v80.7C403.4,186.7,402.1,188,400.2,188.3z M49.9,188.3c-1.7-0.3-3-1.6-3-4V0L0,12v5.6l13.3,4.3c2.1,0.8,2.9,2.4,2.9,4.5v157.1c0,2.9-2.4,5.1-5.9,5.1l-10,0.2v9.3h62.6v-8.5L49.9,188.3z">
+  					</path>
+  				</svg>  -->
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 273.7" class="branding__logo" style="--logo-scroll-width: 1vw; width: calc(41vw - var(--logo-scroll-width));">
+            <path d="M179.2,4.1l-61.5,212.2H62.5L6.3,4.1h62.2l42,160.7L156.2,4.1H179.2z M193.4,216.3V59.8c17.7,0,36.6-1.4,56.7-4.2v160.7
+              H193.4z M222.1-1.1c17.6,0,26.4,6.8,26.4,20.5c0,13.7-8.8,20.5-26.4,20.5c-17.6,0-26.4-6.8-26.4-20.5C195.7,5.7,204.5-1.1,222.1-1.1
+              z M338.4,1v215.3h-56.7V4.1C297.3,4.1,316.2,3.1,338.4,1z M471.6,61.2c26.4,11.3,39.6,27.7,39.6,49.3c0,14.2-6.6,26.3-19.9,36.4
+              c-13.3,10-29.3,15.1-48,15.1c-7.3,0-17-0.9-29.4-2.8c-7.2,4.1-10.7,8.3-10.7,12.4c0,5.7,4.4,8.5,13.2,8.5c2.3,0,6.9-0.2,13.8-0.6
+              c17.5-1.1,30.3-1.7,38.2-1.7c37.7,0,56.6,14.3,56.6,42.9c0,34.6-31.2,51.9-93.7,51.9c-46.5,0-69.8-9.8-69.8-29.4
+              c0-11.3,9.4-19,28.3-23c-20.1-5.3-30.2-14-30.2-26.3c0-15.2,12-28.6,35.9-40.3c-21-8.5-31.6-22.9-31.6-43.4
+              c0-15.5,6.4-28.6,19.1-39.1c12.7-10.5,28.5-15.8,47.4-15.8c6.4,0,14.9,0.7,25.3,2c-0.5-3.6-0.8-6.5-0.8-8.5
+              c0-20.5,10.7-30.8,32.2-30.8c17.1,0,25.6,7.2,25.6,21.6c0,11-5.1,16.5-15.4,16.5c-3.4,0-7.5-1.1-12.1-3.4c-2.9-1.5-5.1-2.2-6.5-2.3
+              C474,50.2,471.6,53.7,471.6,61.2z M435.1,226.6c-26.4,0-39.6,5.1-39.6,15.4c0,10.2,12.8,15.2,38.4,15.2c29.7,0,44.6-5.7,44.6-17.1
+              C478.4,231.1,464,226.6,435.1,226.6z M436.6,70.8c-10.6,0-15.9,13.2-15.9,39.5c0,24.1,5.5,36.2,16.5,36.2
+              c10.1,0,15.1-10.7,15.1-32.2C452.3,85.3,447.1,70.8,436.6,70.8z M610.5,55.6c51.8,0,77.7,27.4,77.7,82.1c0,54.7-25.9,82.1-77.7,82.1
+              c-51.9,0-77.9-27.4-77.9-82.1C532.7,83,558.6,55.6,610.5,55.6z M610.4,69.4c-12.5,0-18.8,22.7-18.8,68.2c0,45.5,6.3,68.2,18.8,68.2
+              c12.6,0,19-22.7,19-68.2C629.3,92.2,623,69.4,610.4,69.4z">
+            </path>
+          </svg> -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 273.7" class="branding__logo" style="--logo-scroll-width: 1vw; width: calc(41vw - var(--logo-scroll-width));">
+            <path d="M84.9,211.9L24.9,48c-2.9-7.8-6.1-13.4-9.7-16.7c-3.6-3.3-8.6-5.6-15.2-6.9V10.8h93.3v13.7c-7.5,1-12.7,2.3-15.5,4
+              c-2.8,1.7-4.2,4.4-4.2,8c0,1.1,0.2,2.3,0.5,3.8c0.4,1.4,0.9,3.2,1.7,5.3l40.9,111.4l36.7-104.7c0.2-0.6,0.5-1.5,0.9-2.8
+              c2-5.7,3-9.6,3-11.7c0-3.6-1.6-6.4-4.9-8.4c-3.2-2-8.9-3.6-17-4.9V10.8h61.7v13.7c-6.1,1.1-11,3.7-14.9,7.7c-3.9,4-7.4,10.3-10.7,19
+              l-59.1,160.7H84.9z M196,207.3V195c5.6-0.9,9.4-2.5,11.3-4.9c1.9-2.4,2.8-7.1,2.8-14.1V95.7c0-6.6-1-10.9-3-12.9c-2-2-6-3.1-12-3.3
+              V66.9c9-0.4,18.3-1,27.9-1.7c9.7-0.7,19.6-1.6,29.7-2.6V176c0,7,0.9,11.7,2.8,14.1c1.9,2.4,5.6,4,11.1,4.9v12.4H196z M204.7,20.5
+              c0-5.9,2.2-10.8,6.6-14.7c4.4-3.9,10-5.9,16.8-5.9c6.8,0,12.4,2,16.9,5.9c4.5,3.9,6.8,8.8,6.8,14.6c0,5.9-2.2,10.7-6.5,14.3
+              c-4.3,3.7-10.1,5.5-17.2,5.5c-7,0-12.7-1.8-17-5.5C206.8,31.2,204.7,26.4,204.7,20.5z M296.4,35.3c0-6.3-1.1-10.6-3.2-12.8
+              c-2.2-2.2-6.2-3.4-12.2-3.6V6.6c8.5-0.4,17.5-1.1,26.9-2.1c9.4-1.1,19.7-2.5,30.8-4.5v176c0,6.8,1,11.5,3,14c2,2.5,5.8,4.1,11.4,5
+              v12.4h-70.7V195c5.6-0.9,9.4-2.5,11.3-4.9c1.9-2.4,2.8-7.1,2.8-14.1V35.3z M402.5,202.5c-8.3-2.1-14.5-5.3-18.7-9.5
+              c-4.2-4.3-6.3-9.5-6.3-15.7c0-5.4,1.8-10.4,5.4-15c3.6-4.6,9.1-9.1,16.5-13.3c-7.5-4.5-13.2-9.9-16.8-16.4c-3.7-6.4-5.5-14-5.5-22.7
+              c0-13.9,5.7-25.2,17-34c11.3-8.8,26.1-13.2,44.2-13.2c6.1,0,12.1,0.6,17.9,1.9c5.8,1.3,11.4,3.2,16.9,5.7c4.7-8,9.7-13.9,15-17.6
+              c5.3-3.8,11.1-5.7,17.4-5.7c5.4,0,9.8,1.4,13.2,4.2c3.4,2.8,5.1,6.4,5.1,10.9c0,3.7-1.1,6.6-3.4,8.8s-5.3,3.3-9,3.3
+              c-3.2,0-7-0.8-11.3-2.3s-7-2.3-8.2-2.3c-2.1,0-3.9,0.5-5.3,1.4c-1.5,1-2.8,2.6-4,4.9c5.6,4.8,9.9,10.3,12.8,16.5
+              c2.9,6.1,4.4,12.8,4.4,19.9c0,14.4-5.7,25.7-17,33.8c-11.4,8.2-27.1,12.2-47.2,12.2c-4.3,0-8.3-0.2-11.9-0.7
+              c-3.6-0.5-7-1.2-10.1-2.2c-4,1.8-6.9,3.7-9,5.8c-2,2.1-3,4.4-3,6.8c0,3.6,2,6.2,6.1,7.7c4,1.5,12.7,2.5,26.1,2.8
+              c14.3,0.3,25.5,0.7,33.5,1.3c8,0.6,13.7,1.4,16.9,2.5c10.6,3.5,18.4,8.3,23.4,14.5c5,6.1,7.5,13.9,7.5,23.2c0,14.8-7,26.5-20.9,35.1
+              c-14,8.6-33.1,12.9-57.5,12.9c-20.5,0-37.2-3.5-50-10.5c-12.8-7-19.2-15.9-19.2-26.7c0-7.5,2.8-13.6,8.3-18
+              C381.1,208.2,390.1,204.8,402.5,202.5z M392.4,231c0,7,4.1,12.6,12.4,16.7c8.2,4.1,19.5,6.2,33.7,6.2c14.2,0,25.5-2.1,33.8-6.3
+              c8.3-4.2,12.5-9.7,12.5-16.7c0-6.8-4.2-12.3-12.5-16.5c-8.3-4.1-19.6-6.2-33.8-6.2c-14.2,0-25.5,2.1-33.7,6.2
+              C396.5,218.7,392.4,224.2,392.4,231z M438.2,145.6c7.2,0,12.9-3.2,17.2-9.5c4.3-6.4,6.5-14.9,6.5-25.7s-2.2-19.4-6.5-25.7
+              c-4.3-6.3-10-9.5-17.2-9.5c-7.3,0-13.1,3.1-17.4,9.4c-4.3,6.3-6.4,14.9-6.4,25.7c0,10.8,2.2,19.4,6.4,25.7
+              C425.1,142.4,430.9,145.6,438.2,145.6z M594.6,211.7c-9.1,0-17.6-1.6-25.5-4.7c-7.9-3.2-15-7.8-21.2-14c-7.1-7-12.5-15.2-16.3-24.7
+              c-3.7-9.4-5.6-19.8-5.6-31c0-22.1,6.4-40.1,19.2-54c12.8-13.9,29.2-20.8,49.4-20.8c20.2,0,36.7,6.9,49.5,20.8
+              c12.8,13.9,19.2,31.9,19.2,54c0,11.1-1.9,21.5-5.7,30.9c-3.8,9.5-9.3,17.7-16.5,24.7c-6.3,6.2-13.4,10.9-21.2,14
+              C612.2,210.1,603.7,211.7,594.6,211.7z M594.6,199c8.1,0,13.7-4.3,16.9-12.8c3.2-8.6,4.8-24.9,4.8-48.9c0-24.2-1.6-40.6-4.8-49.2
+              c-3.2-8.6-8.8-12.9-16.9-12.9c-8.2,0-13.8,4.3-17,12.9c-3.2,8.6-4.8,25-4.8,49.2c0,24,1.6,40.3,4.8,48.9
+              C580.8,194.8,586.4,199,594.6,199z">
+            </path>
+          </svg>
+  				<h1 class="branding__wordmark is-visually-hidden">Ogilvy</h1>
+  			</a>
+  			<input type="checkbox" id="menu-toggle" role="button" class="checkbox-toggle js-checkbox-toggle" tabindex="0" data-html-toggle="menu-active">
+  			<label for="menu-toggle" class="site-nav__btn burger" aria-haspopup="menu" aria-label="Open main menu" aria-expanded="false">
+  				<span class="burger__inner"><i class="sr-only">Drop-Down Menu</i></span>
+  			</label>
+  			<nav role="navigation" class="site-nav js-site-nav">
+  				<ul class="site-nav__list">
+  					<li class="site-nav__item site-nav__item--work">
+  						<ul class="site-nav__sub-list">
+  							<li class="work-scroll site-nav__sub-item">
+  								<!-- <a href="index.html" class="is-active">Work</a> -->
+                  
+                  <!-- როდესაც მინდა work-და home-ი სხვადასხვა იყოს -->
+                  <a href="index.html#work" class="work-active" style="color: rgb(0, 0, 0);" onclick="reloadPage()">Work</a>
+  							</li>
+  							<li class="site-nav__sub-item scrollMenu">
+  								<a href="about.html">About</a>
+  							</li>
+  							<li class="site-nav__sub-item scrollMenu">
+  								<a href="team.html">Team</a>
+  							</li>
+  							<li class="site-nav__sub-item scrollMenu">
+  								<a href="ideas.html">Ideas</a>
+  							</li>
+  							<li class="site-nav__mob-item site-nav__sub-item scrollMenu">
+  								<a href="careers.html">Careers</a>
+  							</li>
+  						</ul>
+  					</li>
+  					<li class="site-nav__item">
+  						<a href="contact.html">Contact</a>
+  					</li>
+  				</ul>
+  				<div class="grid small--grid--2up"></div>
+  			</nav>
+  		</div>
+  	</header>
+  	<main id="main" class="site-main">
+      <div data-drupal-messages-fallback="" class="hidden"></div>
+  		<section class="splash__wrapper section--red">
+  			<div class="splash__scroll dragscroll">
+				<div class="carousel_slider">
+					<div class="carousel_track row carousel_track">
+						<div class="col">
+							<div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/SPLASH HOME MOBILE_transiton l.jpg" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Vaseline
+                    <span>Transition Body Lotion</span>
+                </p>
+							</div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/abeb_2014_07-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Art Basel
+                    <span>Rebrand</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ACC-GP-23-07-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Muse
+                    <span>A Portrait of Grayson Perry</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/AYCSDI_2016_3.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    As You Change
+                    <span>So Do I</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/aco_2014_03-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Penguin
+                    <span>A Clockwork Orange Restored Edition</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/AFE_2014_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Art from Elsewhere
+                    <!-- <span>Transition Body Lotion</span> -->
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/AS_2016_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Architecture and Surrealism
+                    <!-- <span>Transition Body Lotion</span> -->
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ATT_Cover_03-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Game
+                    <span>All Things Trump</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ace_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Ace Hotel Shoreditch Murals
+                    <!-- <span>Transition Body Lotion</span> -->
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ba_2014_03-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Bicycle Artisans
+                    <!-- <span>Transition Body Lotion</span> -->
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/balagan_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Balagan!!!
+                    <span>Book about contemporary art</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/bb_2007_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Barnbrook Bible
+                    <!-- <span>Transition Body Lotion</span> -->
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/BHf-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    British Heart Foundation
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/bosc_2010_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    17th Biennale of Sydney Catalogue
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/buy-nothing-day-1000x634.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Adbusters
+                    <span>Buy Nothing Day</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/cae_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Critical Art Ensemble
+                    <span>Disturbances</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/COP21_2015_06-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    COP21
+                    <span>Guerrilla poster campaign</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/cos_2010_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Chicks on Speed
+                    <span>Don’t Art Fashion Music</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/crm_2012_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Creative Review
+                    <span>Monograph</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Cruel_2015_10-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Banksy’s Dismaland
+                    <span>Cruel Designs</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/d_2007_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Dignity
+                    <span>Japanese funeral branding</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/db_nhc_2014_14-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>Nothing has Changed</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/db_web_2013_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    davidbowie.com
+                    <span>David Bowie’s official website</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dbhc_2002_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>Heathen</span>
+                </p>
+              </div>
+
+
+
+
+
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/SPLASH HOME MOBILE_transiton l.jpg" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Vaseline
+                    <span>Transition Body Lotion</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/abeb_2014_07-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Art Basel
+                    <span>Rebrand</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ACC-GP-23-07-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Muse
+                    <span>A Portrait of Grayson Perry</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/AYCSDI_2016_3.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    As You Change
+                    <span>So Do I</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/aco_2014_03-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Penguin
+                    <span>A Clockwork Orange Restored Edition</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/AFE_2014_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Art from Elsewhere
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/AS_2016_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Architecture and Surrealism
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ATT_Cover_03-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Game
+                    <span>All Things Trump</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ace_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Ace Hotel Shoreditch Murals
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ba_2014_03-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Bicycle Artisans
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/balagan_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Balagan!!!
+                    <span>Book about contemporary art</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/bb_2007_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Barnbrook Bible
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/BHf-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    British Heart Foundation
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/bosc_2010_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    17th Biennale of Sydney Catalogue
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/buy-nothing-day-1000x634.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Adbusters
+                    <span>Buy Nothing Day</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/cae_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Critical Art Ensemble
+                    <span>Disturbances</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/COP21_2015_06-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    COP21
+                    <span>Guerrilla poster campaign</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/cos_2010_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Chicks on Speed
+                    <span>Don’t Art Fashion Music</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/crm_2012_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Creative Review
+                    <span>Monograph</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Cruel_2015_10-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Banksy’s Dismaland
+                    <span>Cruel Designs</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/d_2007_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Dignity
+                    <span>Japanese funeral branding</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/db_nhc_2014_14-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>Nothing has Changed</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/db_web_2013_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    davidbowie.com
+                    <span>David Bowie’s official website</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dbhc_2002_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>Heathen</span>
+                </p>
+              </div>
 						</div>
+            <div class="col">
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dbisb_2013_05-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie Is
+                    <span>The Black and White Years</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dbtnde_2013_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>The Next Day Extra</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DDWSK_INT_Eyes.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Daydreaming with Stanley Kubrick
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/deliveryeasy-animated.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Delivereasy Little Birdie
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Demon-Vis-23-52--1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Produced by Tony Visconti
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DR_2018_Logos-02.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Darkroom
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dhiwts_1997_15-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Damien Hirst
+                    <span>I Want to Spend…</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dhls_2001_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Damien Hirst
+                    <span>Pictures from the Saatchi Gallery</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dhotwtw_2001_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Damien Hirst
+                    <span>On the Way to Work</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DM-CALex_2017_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    California
+                    <span>Designing Freedom</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dmff_14-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Friendly Fire
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dmupe_2013_14-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Unexpected Pleasures
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Doctrines_2005_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Noam Chomsky
+                    <span>Doctrines and Visions</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dfjpb_2011_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Designers for Japan
+                    <span>Pandora’s Box</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DSEI_2015_06-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    #StopDSEI
+                    <span>Protesting The Largest Global Arms Fair In London</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dwmd_8-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Daichi Wo Mamoru Kai Deli
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dwmki_2008_05-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Daichi Wa Mamoru Kai
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/EB_AAP_2022_Cover_17-1-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Extreme Beauty
+                    <span>12 Korean Artists Today</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/faac_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Britain Creates
+                    <span>Fashion and Art Collusion</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/FPN_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Fashion Photography Next
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/GGG_FF_2004_01-1000x1000.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Friendly Fire at Ginza Graphic Gallery
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/half-remembered-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>A Half-Remembered Sentence</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/HS_Catalogue_Cover05-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Horror Show!
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/HS_Merchandise_Tote_Bag23-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Horror Show!
+                </p>
+              </div>
+
+
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dbisb_2013_05-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie Is
+                    <span>The Black and White Years</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dbtnde_2013_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>The Next Day Extra</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DDWSK_INT_Eyes.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Daydreaming with Stanley Kubrick
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/deliveryeasy-animated.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Delivereasy Little Birdie
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Demon-Vis-23-52--1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Produced by Tony Visconti
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DR_2018_Logos-02.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Darkroom
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dhiwts_1997_15-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Damien Hirst
+                    <span>I Want to Spend…</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dhls_2001_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Damien Hirst
+                    <span>Pictures from the Saatchi Gallery</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dhotwtw_2001_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Damien Hirst
+                    <span>On the Way to Work</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DM-CALex_2017_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    California
+                    <span>Designing Freedom</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dmff_14-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Friendly Fire
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dmupe_2013_14-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Unexpected Pleasures
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Doctrines_2005_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Noam Chomsky
+                    <span>Doctrines and Visions</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dfjpb_2011_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Designers for Japan
+                    <span>Pandora’s Box</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/DSEI_2015_06-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    #StopDSEI
+                    <span>Protesting The Largest Global Arms Fair In London</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dwmd_8-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Daichi Wo Mamoru Kai Deli
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/dwmki_2008_05-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Daichi Wa Mamoru Kai
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/EB_AAP_2022_Cover_17-1-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Extreme Beauty
+                    <span>12 Korean Artists Today</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/faac_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Britain Creates
+                    <span>Fashion and Art Collusion</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/FPN_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Fashion Photography Next
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/GGG_FF_2004_01-1000x1000.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Friendly Fire at Ginza Graphic Gallery
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/half-remembered-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>A Half-Remembered Sentence</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/HS_Catalogue_Cover05-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Horror Show!
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/HS_Merchandise_Tote_Bag23-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Horror Show!
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ibfc_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    A Colourful Journey In A Time Machine
+                    <span>Istanbul Biennials for Children</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/i-cant-give-everything-away-crop-1000x563.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>I Can’t Give Everything Away Lyric Video</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/in_1992_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Illustration Now
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/interplay-featured-image-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx and the Maths
+                    <span>Interplay Video</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JF_Cover_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>The Quiet Man</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jf21tn_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>20th Century: The Noise</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JF-AP-23-01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>The Arcades Project</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfatme_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx And The Maths
+                    <span>Evidence</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfatmi_2011_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx And The Maths
+                    <span>Interplay</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfes_2000_03-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx & Jori Hulkkonen
+                    <span>European Splendour</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfu_2013_06-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>Underpass Vinyl Remix</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JL_covers_01-1000x662.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Lennon
+                    <span>Gimme Some Truth</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jmtb_2011_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Just My Type Book Cover
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jmtp_2011_01-1000x1332.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Just My Type Poster
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JP_2019_Logo-02.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Juxta Press
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/k_2001_05-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Kohkoku Magazine
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/kcb_01-1000x750.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Kings Cross Billboard
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/lbosgf_2010_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Little Book of Shocking Global Facts
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/lceoao_2010_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    On & On Catalogue
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/lwm_2013_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Lotte World Mall
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/MAC_2003_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Mori Art Museum
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/MAC_TCV_2003_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Mori Arts Center
+                    <span>Tokyo City View</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/malabar-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Monotype Typeface Promo Films
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/mwd_2011_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Museum of Old and New Art
+                    <span>Wim Delvoye</span>
+                </p>
+              </div>
+
+
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ibfc_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    A Colourful Journey In A Time Machine
+                    <span>Istanbul Biennials for Children</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/i-cant-give-everything-away-crop-1000x563.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>I Can’t Give Everything Away Lyric Video</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/in_1992_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Illustration Now
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/interplay-featured-image-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx and the Maths
+                    <span>Interplay Video</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JF_Cover_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>The Quiet Man</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jf21tn_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>20th Century: The Noise</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JF-AP-23-01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>The Arcades Project</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfatme_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx And The Maths
+                    <span>Evidence</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfatmi_2011_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx And The Maths
+                    <span>Interplay</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfes_2000_03-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx & Jori Hulkkonen
+                    <span>European Splendour</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jfu_2013_06-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Foxx
+                    <span>Underpass Vinyl Remix</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JL_covers_01-1000x662.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    John Lennon
+                    <span>Gimme Some Truth</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jmtb_2011_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Just My Type Book Cover
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/jmtp_2011_01-1000x1332.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Just My Type Poster
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/JP_2019_Logo-02.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Juxta Press
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/k_2001_05-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Kohkoku Magazine
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/kcb_01-1000x750.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Kings Cross Billboard
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/lbosgf_2010_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Little Book of Shocking Global Facts
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/lceoao_2010_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    On & On Catalogue
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/lwm_2013_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Lotte World Mall
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/MAC_2003_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Mori Art Museum
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/MAC_TCV_2003_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Mori Arts Center
+                    <span>Tokyo City View</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/malabar-1000x562.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Monotype Typeface Promo Films
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/mwd_2011_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Museum of Old and New Art
+                    <span>Wim Delvoye</span>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/n_2009_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Newspeak
+                    <span>British Art Now</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/nm_2014_12-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Nature Morte
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/P_MT_Cover_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Mickalene Thomas
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/PK_CT_Cover-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    A Cat’s Tale
+                    <span>A Journey Through Feline History</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ptuan_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Premonition
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/rh_1-1000x734.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Roppongi Hills
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/RI_2017_1.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Reading International
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/sii_2002_04-1000x628.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Shiseido Inoui ID
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/SoI_2019_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Spectacle of Illusion
+                    <span>Magic, the Paranormal and the Complicity of the Mind</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/sots_2018_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Sentinels of the Sea
+                    <span>A Miscellany of Lighthouses Past</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/SPLASH HOME MOBILE_transiton ldblil_2013_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>Love is Lost Limited Edition 12 Inch Vinyl</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/TH_AUGTS_Cover_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    An Underground Guide to Sewers
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/TH_AW_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Amy Winehouse
+                    <span>Beyond Black</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/thba_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Bio Art
+                    <span>Altered Realities</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/uk_raine_2015_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    UK/RAINE
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/up_2002_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Unknown Public Issue 12
+                    <span>Talking Drums</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/vabd_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    British Design 1948–2012
+                    <span>Innovation in the Modern Age Catalogue</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/vadbima_2013_11-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie Is Exhibition Graphics
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/vadoe_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Disobedient Objects
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/VA-PFw_2017_03-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Pink Floyd
+                    <span>Their Mortal Remains</span>
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/VirusFonts_Diablo_01-1000x563.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Diablo
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/WAVM_2016_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Animal. Vegetable. Mineral.
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/wcydtt_2008_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    You Dig the Tunnel
+                </p>
+              </div>
+              <div class="carousel_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Who_2015_16-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Who
+                    <span>The Official History</span>
+                </p>
+              </div>
+
+
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/n_2009_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Newspeak
+                    <span>British Art Now</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/nm_2014_12-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Nature Morte
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/P_MT_Cover_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Mickalene Thomas
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/PK_CT_Cover-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    A Cat’s Tale
+                    <span>A Journey Through Feline History</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/ptuan_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Premonition
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/rh_1-1000x734.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Roppongi Hills
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/RI_2017_1.gif" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Reading International
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/sii_2002_04-1000x628.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Shiseido Inoui ID
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/SoI_2019_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Spectacle of Illusion
+                    <span>Magic, the Paranormal and the Complicity of the Mind</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/sots_2018_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Sentinels of the Sea
+                    <span>A Miscellany of Lighthouses Past</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/SPLASH HOME MOBILE_transiton ldblil_2013_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie
+                    <span>Love is Lost Limited Edition 12 Inch Vinyl</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/TH_AUGTS_Cover_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    An Underground Guide to Sewers
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/TH_AW_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Amy Winehouse
+                    <span>Beyond Black</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/thba_2015_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Bio Art
+                    <span>Altered Realities</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/uk_raine_2015_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    UK/RAINE
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/up_2002_02-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Unknown Public Issue 12
+                    <span>Talking Drums</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/vabd_2012_01-1000x666.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    British Design 1948–2012
+                    <span>Innovation in the Modern Age Catalogue</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/vadbima_2013_11-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    David Bowie Is Exhibition Graphics
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/vadoe_2014_01-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Disobedient Objects
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/VA-PFw_2017_03-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Pink Floyd
+                    <span>Their Mortal Remains</span>
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/VirusFonts_Diablo_01-1000x563.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Diablo
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/WAVM_2016_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    Animal. Vegetable. Mineral.
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/wcydtt_2008_02-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    You Dig the Tunnel
+                </p>
+              </div>
+              <div class="carousel_slide clone_slide">
+                <a href="basel.html" class="">
+                    <img src="img/Who_2015_16-1000x667.webp" alt="">
+                </a>
+                <div class="splash__overlay undefined"></div>
+                <p class="splash__description">
+                    The Who
+                    <span>The Official History</span>
+                </p>
+              </div>
+            </div>
 					</div>
-					<a href="#;" class="logo-gxn">
-						<img src="img/logo-gxn.svg">
-					</a>
 				</div>
-			</div>
-			<div class="menu">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-md-6 wrap-main-menu">
-							<form class="search-wrapper ng-pristine ng-valid">
-								<div class="wrap-search">
-									<a href="#;"><i class="icon-search"></i></a> 
-									<input type="search" placeholder="Search" class="ng-pristine ng-untouched ng-valid search-item">
-								</div>
-							</form>
-							<!-- <div id="searchResults"></div> -->
-							<!-- <a ng-show="showSearch" class="link-cta back-to-menu ng-hide" href="#;" ng-click="backToMenu()">Back to menu</a> -->
-							<div class="menu__wrapper hide-search">
-								<ul class="inner-page"> 
-									<li class="ng-scope">
-										<div class="ng-scope">
-											<a class="ng-binding" href="news.html">News</a>
-										</div>
-									</li>
-									<li class="ng-scope">
-										<div class="ng-scope">
-											<a class="ng-binding" href="projects.html">Projects</a>
-										</div>
-									</li>
-									<li ng-repeat="item in menu" class="ng-scope">
-										<div class="ng-scope">
-											<a class="ng-binding" href="profile.html">Profile</a>
-										</div>
-									</li>
-									<li class="ng-scope">
-										<div class="ng-scope">
-											<a class="ng-binding" href="career.html">Career</a>
-										</div>
-									</li>
-									<li class="ng-scope">
-										<div class="ng-scope">
-											<a class="ng-binding" href="archive.html">Archive</a>
-										</div>
-									</li>
-									<li class="ng-scope">
-										<div class="ng-scope">
-											<a class="ng-binding" href="people.html">People</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="bottom">
-								<div ng-include="socialSharing()" class="wrap-social-sharing ng-scope">
-									<ul class="social-links ng-scope"></ul>
-								</div>
-								<ul class="social-links links-cookie">
-									<li>
-										<a>Cookie Settings</a>
-									</li>
-									<li>
-										<a href="#;">Cookie Policy</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xs-12 col-md-6 wrap-extra-main-menu">
-							<div class="bg-cover">
-								<img alt="Ørestad College" src="img/07_023_Oerestad_Gymnasium_095_V.webp">
-							</div>
-							<a class="logo-gxn" href="#;">
-								<img alt="gxn" src="img/logo-gxn-white.svg">
-							</a>
-							<div class="menu__wrapper">
-								<ul class="inner-page">
-									<li>
-										<h3 class="head-line">Discover BXN, a creative studio with a concept of constant development and perfection.
-										</h3>
-									</li>
-								</ul>
-							</div>
-							<div class="bottom">
-								<ul>
-									<li>
-										<a>Featured project: Untitled
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+				<div class="slider__wrapper slider__wrapper--splash">
+					<svg class="slider__in--splash" width="30" height="20" viewBox="0 0 31 20" xmlns="http://www.w3.org/2000/svg" alt="zoom-in"><path d="M1 1h29v19H1z" fill="none" fill-rule="evenodd"></path></svg>
+					<label for="slider">Change Zoom</label>
+					<span class="slider__left">|</span>
+					<input type="range" min="1" max="64" value="1" class="slider" id="slider" autocomplete="off">
+					<span class="slider__right">|</span>
+					<svg class="slider__out--splash" width="30" height="20" viewBox="0 0 29 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" alt="zoom-out"><path d="M1 1h12v7H1zM1 12h12v7H1zM16 1h12v7H16zM16 12h12v7H16z"></path></g></svg>
 				</div>
-			</div>
-		</header>
-		<div id="Page" class="">
-			<div class="page-content ng-scope" id="PageLanding">
-				<div class="video-teaser">
-					<div class="news-slider-container active">
-						<div class="news-slider-list slick-slider">
-							<!-- <button class="slick-prev slick-arrow swiper-button-prev"></button> -->
-							<div class="slick-list draggable">
-								<div class="fixed-slide">
-									<div>
-										<a href="projects.html" tabindex="0">
-											<!-- <h1 class="ng-binding">We are 4XN. We believe that architecture shapes behaviour.</h1> -->
-											<h1 class="ng-binding">At 4XN, we believe that behavior is influenced by architecture.</h1>
-										</a>
-										<a href="projects.html" tabindex="0">
-											<h5 class="ng-binding">Discover further details about all our projects.</h5>
-										</a>
-									</div>
-								</div>
-								<div class="swiper-container swiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide" ontouchmove="myFunction(event)">
-											<a href="news.html" class="link-cta white ng-scope ng-binding ng-binds">Read article</a>
-											<div class="super-img super-img_height super-img_hover ng-isolate-scope loaded">
-												<img src="img/QQT_photo_Adam_Mork_500_H.webp">
-												<div class="click-gallery"></div>
-												<div>
-													<div class="news-slider-item-description ng-scope">
-														<h5 class="ng-binding binding ng-bind">news</h5>
-														<h3>
-															<a href="news.html" class="ng-binding binding ng-scope ng-bind">UAE Pavilion Take Top Honours at 2023 Awards</a>
-														</h3>
-													</div>
-													<!-- <a href="#;" class="link-cta white ng-scope ng-binding ng-binds">Read article</a> -->
-												</div>
-											</div>
-											<a href="#;" class="link-overlay ng-scope1"></a>
-										</div>
-										<div class="swiper-slide">
-											<a href="news.html" class="link-cta white ng-scope ng-binding1">Read article</a>
-											<div class="super-img super-img_height ng-isolate-scope loaded" id="super-img_hover2">
-												<img src="img/HarborplaceBaltimore_c_Icon_02.webp">
-												<div class="click-gallery"></div>
-												<div>
-													<div class="news-slider-item-description ng-scope">
-														<h5 class="ng-binding ng-binding1">news</h5>
-														<h3>
-															<a href="news.html" class="ng-binding ng-binding1 ng-scope">4XN Selected to Design New Iconic Destination at the 270 Park Avenue</a>
-														</h3>
-													</div>
-													<!-- <a href="#;" class="link-cta white ng-scope ng-binding1">Read article</a> -->
-												</div>
-												<a href="#;" class="link-overlay ng-scope"></a>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<a href="news.html" class="link-cta white ng-scope ng-binding2">Read article</a>
-											<div class="super-img super-img_height ng-isolate-scope loaded third-super-img">
-												<img src="img/750000_SKH_Programhandling-2_Render_Entrance_park.webp">
-												<div class="click-gallery"></div>
-												<div>
-													<div class="news-slider-item-description ng-scope">
-														<h5 class="ng-binding ng-binding2">news</h5>
-														<h3>
-															<a href="news.html" class="ng-binding ng-binding2 ng-scope">4XN Reveals Design for the new The Forestias</a>
-														</h3>
-													</div>
-													<!-- <a href="#;" class="link-cta white ng-scope ng-binding2">Read article</a> -->
-												</div>
-												<!-- <a href="#;" class="link-overlay ng-scope">Read article</a> -->
-											</div>
-										</div>
-										<!-- swiper with zero start -->
-										<div class="swiper-slide">
-										</div>
-									</div>
-									<div class="swiper-button">
-										<button class="slick-prev slick-arrow swiper-button-prev"></button>
-										<button class="slick-next slick-arrow swiper-button-next" aria-label="Next" type="button" aria-disabled="false">Next</button>
-										<div class="count-page swiper-pagination">
-											<!-- <span class="swiper-pagination-current">0</span>
-											<span class="swiper-pagination-total">3</span> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- <button class="slick-next slick-arrow swiper-button-next" aria-label="Next" type="button" aria-disabled="false">Next</button>
-							<div class="count-page swiper-pagination">
-								<div class="current-page">0</div>
-								<span>/</span>
-								<div class="total-page ng-binding">3</div>
-							</div> -->
-						</div>
-					</div>
-				</div>
-				<div class="below-module--wrapper">
-					<div class="modules--below container-fluid">
-						<div class="row module-module_a mod-0">
-							<div class="ng-scope" ng-switch-when="module_a">
-								<div class="col-md-10 mouseover left">
-									<a href="ellison.html" data-ui-sref="pageProjectDetail({slug: 'epfl-ecotope'})">
-										<div class="wrap-img img_hover">
-											<div class="ng-isolate-scope loaded">
-												<img src="img/EPFL_Ecotope_Aerial_v2.webp">
-												<div class="click-gallery"></div>
-											</div>
-										</div>
-									</a>
-									<div class="wrap-text-in-md">
-										<h2 class="ng-binding">Bridging the gap between research and industry</h2>
-										<h4 class="ng-binding ng-scope">Ellison Institute</h4>
-										<div class="text font-id00 ng-binding">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur.</p>
-										</div>
-										<a href="ellison.html" class="link-cta ng-scope">View project</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row module-module_b mod-1">
-							<div class="mouseover ng-scope">
-								<div class="ng-isolate-scope img_right has-img">
-									<div class="col-md-5 wrap-img-video ng-scope">
-										<a href="ellison.html" class="ng-scope">
-											<div class="wrap-img">
-												<div class="super-img ng-isolate-scope loaded">
-													<img src="img/Entrance_View_Updated_crop.webp">
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-5 col-lg-4 col-md-offset-1 wrap-text-in-md">
-										<h2 class="ng-binding">Can a museum be both logical and attractive?</h2>
-										<h4 class="ng-binding ng-scope">Norton Museum of Art</h4>
-										<div class="text font-id00 ng-binding">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.</p>
-										</div>
-										<div class="ng-scope">
-											<a href="ellison.html" class="link-cta ng-scope">View project</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row module-module_a mod-2">
-							<div class="ng-scope">
-								<div class="col-md-10 mouseover left">
-									<a href="ellison.html" data-ui-sref="pageProjectDetail({slug: 'lemvig-climatorium'})">
-										<div class="wrap-img margBottom">
-											<div class="super-img ng-isolate-scope loaded">
-												<img src="img/Foto_Thomas_Mølvig_3_1197x1800.webp">
-											</div>
-										</div>
-									</a>
-									<div class="wrap-text-in-md">
-										<h2 class="ng-binding">A forum innovation and development projects within utility services and climate change</h2>
-										<h4 class="ng-binding ng-scope">Bund Finance Center</h4>
-										<div class="text font-id00 ng-binding">dolor.text | to_trusted
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint.</p>
-										</div>
-										<a href="ellison.html" class="link-cta ng-scope" data-ui-sref="pageProjectDetail({slug: 'lemvig-climatorium'})">View project</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row module-module_b mod-3">
-							<div class="mouseover ng-scope">
-								<div class="ng-isolate-scope img_right has-img">
-									<div class="col-md-5 wrap-img-video ng-scope">
-										<a href="ellison.html" class="ng-scope">
-											<div class="wrap-img marg-bottom">
-												<div class="super-img ng-isolate-scope loaded">
-													<img src="img/R_Hjortshoj-Malardalen-WEB-286.webp">
-													<div class="click-gallery"></div>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="col-md-5 col-lg-4 col-md-offset-1 wrap-text-in-md marginTop">
-										<h2 class="ng-binding">Unify the old with the new</h2>
-										<h4 ng-if="item.name" class="ng-binding ng-scope">Yale School of Management</h4>
-										<div class="text font-id00 ng-binding"><p>Yale School of Management in New Haven, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-										<div class="ng-scope">
-											<a class="link-cta ng-scope" href="ellison.html">View project</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row module-module_a mod-4">
-							<div ng-switch-when="module_a" class="ng-scope">
-								<div class="col-md-10 mouseover left">
-									<a href="ellison.html">
-										<div class="wrap-img margBottom">
-											<div class="super-img ng-isolate-scope loaded">
-												<img src="img/3XN_Sydney-Fish-Market_Waterfront_Credit-MIR__pier_web_05.webp">
-												<div class="click-gallery"></div>
-											</div>
-										</div>
-									</a>
-									<div class="wrap-text-in-md">
-										<h2 class="ng-binding">A Chapel will become a world-class tourist - and cultural attraction</h2>
-										<h4 class="ng-binding ng-scope">Vatican Chapel</h4>
-										<div class="text font-id00 ng-binding">
-											<p>Vatican Chapel dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-										</div>
-										<a class="link-cta ng-scope" href="ellison.html">View project</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row module-module_a mod-5">
-							<div class="ng-scope">
-								<div class="col-md-10 mouseover right">
-									<a href="ellison.html">
-										<div class="wrap-img margBottom">
-											<div class="super-img ng-isolate-scope loaded">
-												<img src="img/1370-cobot-lobby-case-image.webp">
-											</div>
-										</div>
-									</a>
-									<div class="wrap-text-in-md">
-										<h2 class="ng-binding">How do you create a university facility shared by two companies?</h2>
-										<h4 class="ng-binding ng-scope">Chinese university</h4>
-										<div class="text font-id00 ng-binding">
-											<p>Chinese university amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore eiusmod.</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-										</div>
-										<a class="link-cta ng-scope" href="ellison.html">View project</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer class="footer" id="Footer">
-				<div class="container-fluid">
-					<div class="row wrap-social-sharing ng-scope">
-						<ul class="social-links ng-scope"></ul>
-					</div>
-					<div class="row wrap-address">
-						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
-							<p class="head ng-binding ng-scope">Tbilisi</p>
-							<div class="address-des ng-binding ng-scope">
-								<p>4XN Tbilisi A/S</p>
-								<p>Rustaveli Ave 8</p>
-								<p>2357 Tbilisi</p>
-								<p>Georgia</p>
-								<p>&nbsp;</p>
-								<p>VAT: DK368749</p>
-							</div>
-							<div class="more">
-								<p class="ng-binding ng-scope">+995 358796</p>
-								<a href="mailto:branch.email" class="ng-binding ng-scope">4xn@4xn.ge</a>
-								<a class="link-cta ng-scope" href="#;">Read more</a>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
-							<p class="head ng-binding ng-scope">Berlin</p>
-							<div class="address-des ng-binding ng-scope">
-								<p>4XN Germany</p>
-								<p>Bismarckstraße 15 A</p>
-								<p>225 46&nbsp;Berlin</p>
-								<p>Germany</p>
-								<p>&nbsp;</p>
-								<p>Org. nr.: 996845-5072</p>
-							</div>
-							<div class="more">
-								<p class="ng-binding ng-scope">+ 80 (0) 561610478</p>
-								<a class="link-cta ng-scope" href="#;">Read more</a>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
-							<p class="head ng-binding ng-scope">New York</p>
-							<div class="address-des ng-binding ng-scope">
-								<p>4XN&nbsp;USA LLC</p>
-								<p>248 Madison Ave</p>
-								<p>Building 52, Floor 14, Unit 6</p>
-								<p>Brooklyn, NY&nbsp;22568</p>
-								<p>New York</p>
-								<p>USA</p>
-								<p>&nbsp;</p>
-								<div></div>
-							</div>
-							<div class="more">
-								<p class="ng-binding ng-scope">+7 55 689 4566</p>
-								<a href="mailto:branch.email" class="ng-binding ng-scope">nycoffice@4xn.us</a>
-								<a ng-if="branch.slug" class="link-cta ng-scope" href="#;">Read more</a>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
-							<p class="head ng-binding ng-scope">Sydney</p>
-							<div class="address-des ng-binding ng-scope">
-								<p class="p1">
-									<span class="s1">4XN&nbsp;Australia Pty. Ltd.</span>
-								</p>
-								<p>Shop 1, 369 Levonshire Street</p>
-								<p>Hurry Hills MSW 3020</p>
-								<p>Australia</p>
-								<p>&nbsp;</p>
-								<p>ABN 50 520 303 620</p>
-							</div>
-							<div class="more">
-								<p class="ng-binding ng-scope">+00 3 5888 4475 </p>
-								<a class="link-cta ng-scope" href="#;">Read more</a>
-							</div>
-						</div>
-						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
-							<p class="head ng-binding ng-scope">London</p>
-							<div class="address-des ng-binding ng-scope">
-								<p>4XN London Limited</p>
-								<p>The Frames</p>
-								<p>1 Oxford Street</p>
-								<p>London&nbsp;EC5B 9RT</p>
-								<p>United Kingdom</p>
-								<p>&nbsp;</p>
-								<p>VAT: GB657984132</p>
-							</div>
-							<div class="more">
-								<p class="ng-binding ng-scope">+66 5542 65875</p>
-							</div>
-						</div>
-					</div>
-					<div class="row d-block">
-						<div class="col-xs-6 col-md-6 col-lg-4">
-							<a ng-href="#;" data-target="_blank" class="link-cta cookie-link ng-binding" href="#;">Privacy policy</a> 
-							<a class="link-cta cookie-link">Cookie Settings</a> 
-							<a ng-href="#;" class="link-cta cookie-link" href="#;">Cookie Policy</a>
-						</div>
-						<div class="wrap-link-arrow trigger-container">
-							<a href="#trigger-icon">
-							<span class="link-with-arrow text-left">Back to top<i class="icon-arrow white up"></i></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-	</div>
+		  </section>
+  		<div class="section--locker js-locker section--red">
+  			<section class="section section--v-center hero hero--red section--lockee js-lockee">
+  				<div class="section__mask"></div>
+  				<div class="container containerFortext">
+  					<div class="hero--con">
+  						<p>People ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. They enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip create commodo consequat. Duis.</p>
+  					</div>
+  				</div>
+  			</section>
+  		</div>
+  		<div class="has-sticky section--default">
+  			<section id="work" class="local-market section section--sticky work js-home2 js-view-dom-id-4397a65904520390a9cb7094becc3442d640af08f18505cbc1ca8edd55d78beb" data-once="ajax-pager">
+  				<div class="section__mask"></div>
+  				<div class="container">
+  					<form class="views-exposed-form bef-exposed-form">
+  						<div class="section__grid-work-search" style="">
+  							<ul class="section__grid-utilities section__grid-utilities--mobile" style="opacity: 1;">
+  								<li>
+  									<div class="section__search-form js-work-search" style="">
+  										<div class="input">
+  											<input type="text" id="edit-combine" class="form-text" aria-label="">
+  										</div>
+  										<button class="section__grid-utility">
+  											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" role="img" aria-labelledby="worksearch"><title id="worksearch">Search</title><path fill="none" stroke="currentColor" stroke-width=".75" d="M10.93 5.57a4.95 4.95 0 0 1-4.97 4.94A4.95 4.95 0 0 1 1 5.57 4.95 4.95 0 0 1 5.96.64a4.96 4.96 0 0 1 4.97 4.93zM9.37 9.35L13.04 13 9.37 9.35z"></path>
+  											</svg>
+  										</button>
+  										<button class="section__grid-utility" type="reset">
+  											<svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" role="img" aria-labelledby="workreset"><title id="workreset">Reset</title><path fill="none" stroke="currentColor" d="M15.64.8L1.43 15m14.14 0L1.36.8"></path></svg>
+  										</button>
+  									</div>
+  									<div class="search-form-showing section__grid-right section__grid-page js-section-page-view search-icons is-home">
+  										<p>
+  											<span class="show">Showing:</span> <a href="javascript:;" class="section__page-view-link js-section-page-link"><span class="js-section-page-view-text">All</span> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.1 20.1"><path fill="none" d="M10.1 0v20.1m10-10H0"></path></svg></a>
+  										</p>
+  									</div>
+  									<div class="search-form-showing section__grid-right section__grid-page js-section-page-view is-home">
+  										<p>Showing: <a href="/#work" class="section__page-view-link js-section-page-link" target="_blank" rel="nofollow noreferrer"><span class="js-section-page-view-text">All</span> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.1 20.1"><path fill="none" d="M10.1 0v20.1m10-10H0"></path></svg></a>
+  										</p>
+  									</div>
+  									<ul class="adv-search-list" style="">
+  										<li class="adv-search-mob-icon">
+  											<svg style="display: none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" role="img" aria-labelledby="worksearch">
+  												<title id="worksearch">Search</title>
+  												<path fill="none" stroke="currentColor" stroke-width=".75" d="M10.93 5.57a4.95 4.95 0 0 1-4.97 4.94A4.95 4.95 0 0 1 1 5.57 4.95 4.95 0 0 1 5.96.64a4.96 4.96 0 0 1 4.97 4.93zM9.37 9.35L13.04 13 9.37 9.35z"></path>
+  											</svg>
+  										</li>
+  										<li><a class="capabilities " href="#search-capabilities">Capabilities</a> </li>
+  									</ul>
+  									<span class="adv-search-wrk-icon adv-search-icon advsearchicon" style="">
+  										<svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%">
+  											<path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path>
+  										</svg>
+  									</span>
+  									<div id="search-capabilities" class="adv-search-list-con" style="display: none">
+  										<ul data-drupal-selector="edit-field-capability-target-id" id="edit-field-capability-target-id--wrapper" class="fieldgroup form-composite form-checkboxes grid small--grid--2up large--grid--3up" name="field_capability_target_id">
+  											<li class="grid__item is__active">
+  												<input data-drupal-selector="edit-field-capability-target-id-1" type="checkbox" id="edit-field-capability-target-id-1" name="field_capability_target_id[1]" value="1" class="form-checkbox" data-url="advertising">
+  												<label for="edit-field-capability-target-id-1" class="option"> <a class="subcategories" title="Advertising">Advertising <svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%"><path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path></svg></a></label>
+  											</li>
+  											<li class="grid__item is__active">
+  												<input data-drupal-selector="edit-field-capability-target-id-21" type="checkbox" id="edit-field-capability-target-id-21" name="field_capability_target_id[21]" value="21" class="form-checkbox" data-url="consulting">
+  												<label for="edit-field-capability-target-id-21" class="option"> <a class="subcategories" title="Consulting">Consulting <svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%"><path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path></svg></a></label>
+  											</li>
+  											<li class="grid__item is__active">
+  												<input data-drupal-selector="edit-field-capability-target-id-36" type="checkbox" id="edit-field-capability-target-id-36" name="field_capability_target_id[36]" value="36" class="form-checkbox" data-url="health">
+  												<label for="edit-field-capability-target-id-36" class="option"> <a class="subcategories" title="Health">Health <svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%"><path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path></svg></a></label>
+  											</li>
+  											<li class="grid__item is__active">
+  												<input data-drupal-selector="edit-field-capability-target-id-11" type="checkbox" id="edit-field-capability-target-id-11" name="field_capability_target_id[11]" value="11" class="form-checkbox" data-url="pr-influence">
+  												<label for="edit-field-capability-target-id-11" class="option"> <a class="subcategories" title="PR &amp; Influence">PR &amp; Influence <svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%"><path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path></svg></a></label>
+  											</li>
+  											<li class="grid__item is__active">
+  												<input data-drupal-selector="edit-field-capability-target-id-31" type="checkbox" id="edit-field-capability-target-id-31" name="field_capability_target_id[31]" value="31" class="form-checkbox" data-url="relationship-design">
+  												<label for="edit-field-capability-target-id-31" class="option"> <a class="subcategories" title="Relationship Design">Relationship Design <svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%"><path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path></svg></a></label>
+  											</li>
+  										</ul>
+  									</div>
+  									<div id="search-industries" class="adv-search-list-con" style="display: none"></div>
+  									<div id="search-clients" class="adv-search-list-con" style="display: none"></div>
+  								</li>
+  							</ul>
+  						</div>
+  						<input data-drupal-selector="edit-open" type="hidden" name="open" value="">
+  						<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+  							<input data-bef-auto-submit-click="" class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-submit-our-work-grid" type="submit" id="edit-submit-our-work-grid" value="Apply">
+  						</div>
+  					</form>
+  					<ul class="work__grid js-work-grid">
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_0.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_0.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_0.jpg" alt="Boy and mother sitting on a bed having a serious conversation" title="Stop Bullying — Hellenic Ministry of Education">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>David Bowie
+  										<span class="work__item-client">Nothing has Changed
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_transiton l.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_transiton l.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_transiton l.jpg" alt="Close up of a Thai woman" title="Transition Body Lotion — Vaseline">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Transition Body Lotion
+  										<span class="work__item-client">Vaseline</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<!-- <li class="work__item work__item--small js-work-item cat-">
+  							<a href="#;" data-category-title="">
+  								<picture>
+  									<source srcset="img/HOME SMALL_MACMA.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HOME SMALL_MACMA.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME SMALL_MACMA.jpg" alt="A mother holds her son, both smiling cheek-to-cheek, with the ocean in the background" title="Machine-Generated — MACMA">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Machine-Generated
+  										<span class="work__item-client">MACMA</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li> -->
+  						<li class="work__item work__item--large js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/HOME LARGE_faber caste.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HOME LARGE_faber caste.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME LARGE_faber caste.jpg" alt="Pencil-drawn image of a zebra against a snowy backdrop" title="Shot on Faber-Castell — Faber-Castell">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>California
+  										<span class="work__item-client">Designing Freedom
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<!-- <li class="work__item js-work-item cat-">
+  							<a href="#;" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_savlon.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_savlon.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_savlon.jpg" alt="The arm of an old man picks at a plate of french fries and a burger on a plate at a restaurant" title="Get Your Hands Back — Savlon">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Get Your Hands Back
+  										<span class="work__item-client">Savlon
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li> -->
+  						<li class="work__item work__item--large js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/HOME LARGE_testicles.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HOME LARGE_testicles.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME LARGE_testicles.jpg" alt="Two cartoon testicles, smiling at each other while sitting on a pregnancy test" title="Test-icles — Alba Foundation">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Mori Art Museum
+  										<!-- <span class="work__item-client">Alba Foundation
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE.jpg" alt="an image of two people engaged in intercourse, but the image is blurred out and heavily pixelated" title="PrEP a New Generation — AIDS-Fondet">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Art Basel
+  										<span class="work__item-client">Rebrand
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_inescapable.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_inescapable.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_inescapable.jpg" alt="Two hands next to each other, lightly touching while resting on a car seat" title="Get In — Uber">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Fashion Photography Next
+  										<!-- <span class="work__item-client">Uber
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE kfc fried (1).jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE kfc fried (1).jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE kfc fried (1).jpg" alt="A pineapple covered in deep fried breading on a table in front of a person whose hands are on the table next to the pineapple" title="Make It KFC — KFC">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Shiseido Inoui ID
+  										<!-- <span class="work__item-client">Volkswagen
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_night schoo.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_night schoo.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_night schoo.jpg" alt="Overhead shot of a man, with male pattern baldness" title="The Bald Thru — Burger King">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Friendly Fire at Ginza Graphic Gallery
+  										<!-- <span class="work__item-client">KFC
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE bald (1).jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE bald (1).jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE bald (1).jpg" alt="Lily Collins wearing a moped helmet, her face reflected in a rear-view mirror" title="Maison Perrier — Perrier">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Friendly Fire
+  										<!-- <span class="work__item-client">Burger King
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item--large js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  							<picture>
+  								<source srcset="img/HOME LARGE_halls.jpg" media="(min-width: 720px)" sizes="30vw">
+  								<img srcset="img/HOME LARGE_halls.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME LARGE_halls.jpg" alt="Two black and white photos side by side. On the left, a mother is flanked by two children, but where the two faces should be are a QR code. On the right a mother poses with her child, with the same QR code where the child's face should be" title="Unseen Faces — Missing Children Argentina &amp; UNICEF">
+  							</picture>
+  							<h3 class="work__item-title">
+  								<span>Unexpected Pleasures
+  									<!-- <span class="work__item-client">Halls
+  									</span> -->
+  								</span>
+  							</h3>
+  						</a>
+  						</li>
+  						<!-- <li class="work__item work__item--small js-work-item cat-">
+  							<a href="#;" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH-VERTICAL---Cerveza-Aguila---Unofficial-Goals.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH-VERTICAL---Cerveza-Aguila---Unofficial-Goals.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH-VERTICAL---Cerveza-Aguila---Unofficial-Goals.jpg" alt="On-field advertisement for Aquila beer. It says &quot;Aquila&quot; in blue font against a yellow background inside of a soccer goal" title="Unofficial Goals — Cerveza Aquila">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Unofficial Goals
+  										<span class="work__item-client">Cerveza Aguila
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li> -->
+  						<li class="work__item work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_Glaad.jpg" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_Glaad.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_Glaad.jpg" alt="Gwen Stefani in an office elevator in the middle of two generic office employees" title="Rock Star Pt. II — Workday">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Amy Winehouse
+  										<span class="work__item-client">Beyond Black
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_recycle me.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_recycle me.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_recycle me.jpg" alt="Close up of a young professional man in a suit" title="Breathe Through It — Halls">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>#StopDSEI
+  										<span class="work__item-client">Protesting The Global Arms Fair In London
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH HOME MOBILE_biles.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH HOME MOBILE_biles.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH HOME MOBILE_biles.jpg" alt="Four young football prospects sit and watch a lecture attentively " title="Draft Night Drills — Nationwide">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Mickalene Thomas
+  										<!-- <span class="work__item-client">Nationwide
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item--large js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/HOME LARGEvideo vinyl.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HOME LARGEvideo vinyl.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME LARGEvideo vinyl.jpg" alt="A grocery shopping basket sitting on a yellow and white tiled floor. The basket holds various fruits and vegetables, and on top lies a blue white and yellow sneaker" title="1352: Refreshed Sneakers">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Monotype Typeface Promo Films
+  										<!-- <span class="work__item-client">Coke Studio
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item--large js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/HOME LARGEFilter Caps.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HOME LARGEFilter Caps.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME LARGEFilter Caps.jpg" alt="Youth hockey players playing hockey in Little Caesars Arena in Detroit, MI" title="Wiser's Cup — J.P. Wiser's">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Kings Cross Billboard
+  										<!-- <span class="work__item-client">Baylor Foundation & Colombia Red Cross
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item--large js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/HoME-LARGE_Super-Bowl-Verizon---Cant-B-Broken-Beyonce_RED.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HoME-LARGE_Super-Bowl-Verizon---Cant-B-Broken-Beyonce_RED.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HoME-LARGE_Super-Bowl-Verizon---Cant-B-Broken-Beyonce_RED.jpg" alt="A map of australia with a red dot in the middle and five red lines emanating from the dot. At the end of each line is a red airplane icon" title="Kentucky Fly Chicken - KFC">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>The Bicycle Artisans
+  										<!-- <span class="work__item-client">Verizon
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH-HOME-MOBILEOgilvy-and-WPP---CeraVe---Michael-CeraVe.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH-HOME-MOBILEOgilvy-and-WPP---CeraVe---Michael-CeraVe.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH-HOME-MOBILEOgilvy-and-WPP---CeraVe---Michael-CeraVe.jpg" alt="Old photo of young girl wearing a pink headband" title="Protect This Kid — GLAAD">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>David Bowie Is Exhibition Graphics
+  										<!-- <span class="work__item-client">CeraVe
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH-HOME-MOBILE-N23000_CIFF_ALL_POSTERS_24x36_A_pink_poster_really.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH-HOME-MOBILE-N23000_CIFF_ALL_POSTERS_24x36_A_pink_poster_really.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH-HOME-MOBILE-N23000_CIFF_ALL_POSTERS_24x36_A_pink_poster_really.jpg" alt="A crushed can of Coca-Cola against a red background" title="Recycle Me — Coca-Cola">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>John Foxx And The Maths
+  										<span class="work__item-client">Evidence
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item work__item--portrait js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/HOME-PORTRAIT-StellaArtois_01_KitchenCabinet.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/HOME-PORTRAIT-StellaArtois_01_KitchenCabinet.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/HOME-PORTRAIT-StellaArtois_01_KitchenCabinet.jpg" alt="image from Fortnite game -- from behind, a character in the game looks up at a ship of some sort, with blue and green lasers shooting out of it" title="The Hope Level — GRAACC">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>Just My Type Poster
+  										<!-- <span class="work__item-client">Stella Artois
+  										</span> -->
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH-HOME-MOBILE_-VI-Dabbawalas.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH-HOME-MOBILE_-VI-Dabbawalas.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH-HOME-MOBILE_-VI-Dabbawalas.jpg" alt="Collage of vinyl records that are printed in colorful spiral patterns" title="Video Vinyls — Coke Studio">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>David Bowie Is
+  										<span class="work__item-client">The Black and White Years
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  						<li class="work__item js-work-item cat-">
+  							<a href="basel.html" data-category-title="">
+  								<picture>
+  									<source srcset="img/SPLASH_HOME MOBILE-Heaven-fish-1200_628_1.jpg" media="(min-width: 720px)" sizes="30vw">
+  									<img srcset="img/SPLASH_HOME MOBILE-Heaven-fish-1200_628_1.jpg" sizes="(min-width:720px) 30vw, 100vw" src="img/SPLASH_HOME MOBILE-Heaven-fish-1200_628_1.jpg" alt="A close up of text from the UK's Sunbeds Regulation Act. We can see the words &quot;An act to&quot; and &quot;ultra-violet&quot; and &quot;Be it enacted&quot;. The paper has been put through the radiation of a sunbed so it is marked with burns and discolorations" title="The Melanoma Law — Skin Cancer UK">
+  								</picture>
+  								<h3 class="work__item-title">
+  									<span>John Foxx
+  										<span class="work__item-client">Underpass Vinyl Remix
+  										</span>
+  									</span>
+  								</h3>
+  							</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</section>
+  		</div>
+	  </main>
+  	<footer class="site-footer" role="contentinfo" style="margin-bottom: 0px;">
+  		<div class="container">
+  			<ul class="site-footer__primary-nav">
+  				<li>
+  					<a href="privacy-policy.html" data-drupal-link-system-path="node/616">Privacy Policy</a>
+  				</li>
+  				<li>
+  					<a href="cookies.html">Cookies</a>
+  				</li>
+  			</ul>
+  			<ul class="social-nav footer-right-nav">
+  				<li class="crm-form">
+  					<a href="#;" aria-haspopup="Subscribe" aria-label="Open Subscribe popup" aria-expanded="false" title="" class="subscribe-popup-open use-ajax1 feed-crm-pop_open footer-connect">
+  					Subscribe</a>
+  				</li>
+  				<li class="social-list">
+  					<a role="button" class="social-list-open" href="javascript:void(0);" aria-haspopup="Social menu" aria-label="Open social menu" aria-expanded="false" title="">
+  					Connect</a>
+  					<ul class="social-nav-list">
+  						<li>
+  							<span>
+  								<a href="#;" title="X" rel="noopener noreferrer" target="_blank">
+  								X
+  								</a>
+  							</span>
+  							<span>
+  								<a href="#;" title="Facebook" rel="noopener noreferrer" target="_blank">
+  								Facebook
+  								</a>
+  							</span>
+  							<span>
+  								<a href="#;" title="Instagram" rel="noopener noreferrer" target="_blank">
+  								Instagram
+  								</a>
+  							</span>
+  							<span>
+  								<a href="#;" title="LinkedIn" rel="noopener noreferrer" target="_blank">
+  								LinkedIn
+  								</a>
+  							</span>
+  						</li>
+  					</ul>
+  				</li>
+  				<li class="country-list">
+  					<a role="button" class="location-list-open" href="javascript:void(0);" aria-haspopup="Location menu" aria-label="Open Location menu" aria-expanded="false" title="">
+  					Location</a>
+  					<ul class="Country-list Country-list">
+  						<li aria-label="Location menu">
+  							<a href="#;" class=" remove-footer-attr">Albania, </a>
+  							<a href="#;" class=" remove-footer-attr">Argentina, </a>
+  							<a href="#;" class=" remove-footer-attr">Australia, </a>
+  							<a href="#;" class=" remove-footer-attr">Austria, </a>
+  							<a href="#;" class=" remove-footer-attr">Belgium, </a>
+  							<a href="#;" class=" remove-footer-attr">Brazil, </a>
+  							<a href="#;" class=" remove-footer-attr">Canada, </a>
+  							<a href="#;" class=" remove-footer-attr">Chile, </a>
+  							<a href="#;" class=" remove-footer-attr">Czech Republic, </a>
+  							<a href="#;" class=" remove-footer-attr">Dominican Republic, </a>
+  							<a href="#;" class=" remove-footer-attr">France, </a>
+  							<a href="#;" class=" remove-footer-attr">Georgia, </a>
+                <a href="#;" class=" remove-footer-attr">Germany, </a>
+  							<a href="#;" class=" remove-footer-attr">Greater China Region - Taiwan, </a>
+  							<a href="#;" class=" remove-footer-attr">Greece, </a>
+  							<a href="#;" class=" remove-footer-attr">Guatemala, </a>
+  							<a href="#;" class=" remove-footer-attr">India, </a>
+  							<a href="#;" class=" remove-footer-attr">Ireland, </a>
+  							<a href="#;" class=" remove-footer-attr">Italy, </a>
+  							<a href="#;" class=" remove-footer-attr">Japan, </a>
+  							<a href="#;" class=" remove-footer-attr">Kenya, </a>
+  							<a href="#;" class=" remove-footer-attr">Latvia, </a>
+  							<a href="#;" class=" remove-footer-attr">Lithuania, </a>
+  							<a href="#;" class=" remove-footer-attr">Mexico, </a>
+  							<a href="#;" class=" remove-footer-attr">Namibia, </a>
+  							<a href="#;" class=" remove-footer-attr">Panama, </a>
+  							<a href="#;" class=" remove-footer-attr">Poland, </a>
+  							<a href="#;" class=" remove-footer-attr">Portugal, </a>
+  							<a href="#;" class=" remove-footer-attr">Serbia, </a>
+  							<a href="#;" class=" remove-footer-attr">Singapore, </a>
+  							<a href="#;" class=" remove-footer-attr">South Africa, </a>
+  							<a href="#;" class=" remove-footer-attr">South Korea, </a>
+  							<a href="#;" class=" remove-footer-attr">Spain, </a>
+  							<a href="#;" class=" remove-footer-attr">Sri Lanka, </a>
+  							<a href="#;" class=" remove-footer-attr">Switzerland, </a>
+  							<a href="#;" class=" remove-footer-attr">Trinidad and Tobago, </a>
+  							<a href="#;" class=" remove-footer-attr">United Arab Emirates, </a>
+  							<a href="#;" class=" remove-footer-attr">United Kingdom, </a>
+  							<a href="#;" class="_active remove-footer-attr">Global</a>
+  						</li>
+              <!-- <li>
+                <a href="#;" title="" target="">
+                Sitemap</a>
+              </li> -->
+  					</ul>
+  				</li>
+  				<li>
+  					<a href="sitemap.html" title="" target="">
+  					Sitemap</a>
+  				</li>
+  			</ul>
+  			<div></div>
+  		</div>
+  	</footer>
+  	<div class="feed-crm-pop_wrapper connect-crm-wrap">
+  		<div class="feed-modal">
+  			<div class="container container--s">
+  				<div class="feed-modal__content-wrapper">
+  					<article class="post">
+  						<div class="post__header connect-pop-header">
+  							<a role="button" href="javascript:void(0);" class="feed-post__close js-post-close" aria-label="Close Subscribe" title="Close Subscribe">
+  								<div class="post__close-button">
+  									<svg id="close-icon" viewBox="0 0 14.6 14.6" width="100%" height="100%">
+  										<path fill="none" stroke="currentColor" stroke-width=".8" d="M.3.3l14 14m0-14l-14 14"></path>
+  									</svg>
+  								</div>
+  							</a>
+  						</div>
+  						<h5 class="post__title ideas_title" style="display: none;">no title</h5>
+  						<h5 class="post__title static_title">Subscribe to stay up to date with our latest thinking</h5>
+  						<div class="post__wrapper connect-form-wrapper">
+  							<div class="post__meta-wrapper connect-pop-copy">
+  								<p class="gated-content" style="display: none;">You can download this content and subscribe to stay up to date on how brands can make an impact in today’s fast-moving world by filling out the information on this page. <br> <br> <strong> Pop-ups must be enabled in your browser settings.</strong> </p>
+  								<p class="nongated-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inbox.</p>
+  								<p class="only-email-content" style="display: none;">Please enter your email address to access this content.<br> <br> <strong> Pop-ups must be enabled in your browser settings.</strong></p>
+  							</div>
+  							<div class="post__text text">
+  								<div class="connect-form">
+  									<form class="content-entity-file-utility-add-form content-entity-file-utility-form" data-drupal-selector="content-entity-file-utility-add-form" action="/" method="post" id="content-entity-file-utility-add-form" accept-charset="UTF-8">
+  										<div class="field--type-string field--name-field-name field--widget-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-name-wrapper" id="edit-field-name-wrapper"> 
+  											<div class="js-form-item form-item js-form-type-textfield form-item-field-name-0-value js-form-item-field-name-0-value">
+  												<label for="edit-field-name-0-value" class="js-form-required invisible form-required">Name</label>
+  												<input class="js-text-full text-full form-text required" data-drupal-selector="edit-field-name-0-value" type="text" id="edit-field-name-0-value" name="field_name[0][value]" value="" size="60" maxlength="255" placeholder="Full Name" required="required" aria-required="true">
+  											</div>
+  										</div>
+  										<span class="field_name_error error" style="display: none;"></span><input autocomplete="off" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="form-ydlpkeo-mhabrw4ymsunejacv6fgo1wqkdx1ihh8dbq" type="hidden" name="form_build_id" value="form-yDLPkEo-MhAbRw4ymSuNejACv6fgo1wqkDx1iHh8dbQ">
+  										<span class="form_build_id_error error" style="display: none;"></span>
+  										<input data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-content-entity-file-utility-add-form" type="hidden" name="form_id" value="content_entity_file_utility_add_form">
+  										<span class="form_id_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-title field--widget-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-title-wrapper" id="edit-field-title-wrapper"> 
+  											<div class="js-form-item form-item js-form-type-textfield form-item-field-title-0-value js-form-item-field-title-0-value">
+  												<label for="edit-field-title-0-value" class="js-form-required invisible form-required">
+  													<a class="subcategories" title="Job Title">Job Title 
+  														<svg id="plus-icon" viewBox="0 0 20.1 20.1" width="100%" height="100%"><path fill="none" stroke="currentColor" d="M10.1 0v20.1m10-10H0"></path></svg>
+  													</a>
+  												</label>
+  												<input class="js-text-full text-full form-text required" data-drupal-selector="edit-field-title-0-value" type="text" id="edit-field-title-0-value" name="field_title[0][value]" value="" size="60" maxlength="255" placeholder="Job Title" required="required" aria-required="true">
+  											</div>
+  										</div>
+  										<span class="field_title_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-account-name field--widget-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-account-name-wrapper" id="edit-field-account-name-wrapper"> 
+  											<div class="js-form-item form-item js-form-type-textfield form-item-field-account-name-0-value js-form-item-field-account-name-0-value">
+  												<label for="edit-field-account-name-0-value" class="js-form-required invisible form-required">Company Name</label>
+  												<input class="js-text-full text-full form-text required" data-drupal-selector="edit-field-account-name-0-value" type="text" id="edit-field-account-name-0-value" name="field_account_name[0][value]" value="" size="60" maxlength="255" placeholder="Company" required="required" aria-required="true">
+  											</div>
+  										</div>
+  										<span class="field_account_name_error error" style="display: none;"></span>
+                      <div class="custom-select-wrapper">
+                          <div class="custom-select" id="custom-select">
+                              <div class="custom-select-trigger">Industry</div>
+                              <div class="custom-options">
+                                  <div class="custom-option" data-value="2">Aerospace</div>
+                                  <div class="custom-option" data-value="3">Agricultural and Horticultural</div>
+                                  <div class="custom-option" data-value="4">Airline</div>
+                                  <div class="custom-option" data-value="5">Alternative Fuels</div>
+                                  <div class="custom-option" data-value="6">Apparel and Clothing</div>
+                                  <div class="custom-option" data-value="7">Automotive</div>
+                                  <div class="custom-option" data-value="8">Banking</div>
+                                  <div class="custom-option" data-value="9">Beverages Alcohol</div>
+                                  <div class="custom-option" data-value="10">Beverages Non-Alcoholic</div>
+                                  <div class="custom-option" data-value="11">Biotechnology</div>
+                                  <div class="custom-option" data-value="12">Business Services</div>
+                                  <div class="custom-option" data-value="13">Charitable Organizations</div>
+                                  <div class="custom-option" data-value="14">Chemicals</div>
+                                  <div class="custom-option" data-value="15">Computer Hardware</div>
+                                  <div class="custom-option" data-value="16">Computer Services</div>
+                                  <div class="custom-option" data-value="17">Computer Software</div>
+                                  <div class="custom-option" data-value="18">Construction</div>
+                                  <div class="custom-option" data-value="19">Consumer Electronics</div>
+                                  <div class="custom-option" data-value="20">Consumer Goods</div>
+                                  <div class="custom-option" data-value="21">Cosmetics, Toiletries and Beauty Aids</div>
+                                  <div class="custom-option" data-value="22">Cultural Institutions</div>
+                                  <div class="custom-option" data-value="23">Education</div>
+                                  <div class="custom-option" data-value="24">DTC Prescription Products</div>
+                                  <div class="custom-option" data-value="25">Electricity</div>
+                                  <div class="custom-option" data-value="26">Energy Equipment and Energy Services</div>
+                                  <div class="custom-option" data-value="27">Entertainment</div>
+                                  <div class="custom-option" data-value="28">Environmental Services and Equipment</div>
+                                  <div class="custom-option" data-value="29">Fashion Accessories</div>
+                                  <div class="custom-option" data-value="30">Food</div>
+                                  <div class="custom-option" data-value="31">Freight Shipping Logistics</div>
+                                  <div class="custom-option" data-value="32">Government</div>
+                                  <div class="custom-option" data-value="33">Health and Wellness</div>
+                                  <div class="custom-option" data-value="34">Healthcare Services</div>
+                                  <div class="custom-option" data-value="35">Home Furnishings and Fixtures</div>
+                                  <div class="custom-option" data-value="36">Hotel and Lodging</div>
+                                  <div class="custom-option" data-value="37">Industrial Manufacturing</div>
+                                  <div class="custom-option" data-value="38">Insurance</div>
+                                  <div class="custom-option" data-value="39">Legal</div>
+                                  <div class="custom-option" data-value="40">Leisure</div>
+                                  <div class="custom-option" data-value="41">Luxury Goods</div>
+                                  <div class="custom-option" data-value="42">Marine Transportation</div>
+                                  <div class="custom-option" data-value="43">Media</div>
+                                  <div class="custom-option" data-value="44">Medical Equipment and Supplies</div>
+                                  <div class="custom-option" data-value="45">Membership Organizations</div>
+                                  <div class="custom-option" data-value="46">Metals and Mining</div>
+                                  <div class="custom-option" data-value="47">Music</div>
+                                  <div class="custom-option" data-value="48">Oil, Gas Exploration and Production</div>
+                                  <div class="custom-option" data-value="49">OTC Non-prescription Products</div>
+                                  <div class="custom-option" data-value="50">Pets</div>
+                                  <div class="custom-option" data-value="51">Pharmaceuticals</div>
+                                  <div class="custom-option" data-value="52">Publishing</div>
+                                  <div class="custom-option" data-value="53">Railroads</div>
+                                  <div class="custom-option" data-value="54">Real Estate</div>
+                                  <div class="custom-option" data-value="55">Renewable Energy</div>
+                                  <div class="custom-option" data-value="56">Retail</div>
+                                  <div class="custom-option" data-value="57">Security Products and Services</div>
+                                  <div class="custom-option" data-value="58">Shoes</div>
+                                  <div class="custom-option" data-value="59">Sports Leagues</div>
+                                  <div class="custom-option" data-value="60">Sports Products and Sports Apparel</div>
+                                  <div class="custom-option" data-value="61">Telecommunications</div>
+                                  <div class="custom-option" data-value="62">Telecommunications Equipment</div>
+                                  <div class="custom-option" data-value="63">Tobacco</div>
+                                  <div class="custom-option" data-value="64">Travel and Tourism Services</div>
+                                  <div class="custom-option" data-value="65">Water Services and Equipment</div>
+                                  <div class="custom-option" data-value="66">Financial Services</div>
+                                  <div class="custom-option" data-value="67">Marketing Communications</div>
+                                  <div class="custom-option" data-value="68">Public Relations</div>
+                                  <div class="custom-option" data-value="69">Restaurants</div>
+                                  <div class="custom-option" data-value="70">Technology</div>
+                                  <div class="custom-option" data-value="71">Toys</div>
+                                  <div class="custom-option" data-value="72">Confidential</div>
+                              </div>
+                          </div>
+                          <input type="hidden" name="field_crm_industries" id="field_crm_industries" required>
+                      </div>
+                      <div class="custom-select-wrapper1">
+                          <div class="custom-select1" id="custom-select1">
+                              <div class="custom-select-trigger1">Country</div>
+                              <div class="custom-options1">
+                                  <div class="custom-option1" data-value="73">Afghanistan</div>
+                                  <div class="custom-option1" data-value="74">Armenia</div>
+                                  <div class="custom-option1" data-value="75">Australia</div>
+                                  <div class="custom-option1" data-value="76">Bangladesh</div>
+                                  <div class="custom-option1" data-value="77">Bhutan</div>
+                                  <div class="custom-option1" data-value="78">Brunei</div>
+                                  <div class="custom-option1" data-value="79">Cambodia</div>
+                                  <div class="custom-option1" data-value="80">Greater China Region - Mainland China</div>
+                                  <div class="custom-option1" data-value="81">Fiji</div>
+                                  <div class="custom-option1" data-value="82">Georgia</div>
+                                  <div class="custom-option1" data-value="83">Greater China Region - Hong Kong</div>
+                                  <div class="custom-option1" data-value="84">India</div>
+                                  <div class="custom-option1" data-value="85">Indonesia</div>
+                                  <div class="custom-option1" data-value="86">Iran</div>
+                                  <div class="custom-option1" data-value="87">Iraq</div>
+                                  <div class="custom-option1" data-value="88">Japan</div>
+                                  <div class="custom-option1" data-value="89">Jordan</div>
+                                  <div class="custom-option1" data-value="90">Kiribati</div>
+                                  <div class="custom-option1" data-value="91">Kyrgyzstan</div>
+                                  <div class="custom-option1" data-value="92">Macao</div>
+                                  <div class="custom-option1" data-value="93">Malaysia</div>
+                                  <div class="custom-option1" data-value="94">Maldives</div>
+                                  <div class="custom-option1" data-value="95">Malta</div>
+                                  <div class="custom-option1" data-value="96">Marshall Islands</div>
+                                  <div class="custom-option1" data-value="97">Mauritius</div>
+                                  <div class="custom-option1" data-value="98">Micronesia</div>
+                                  <div class="custom-option1" data-value="99">Mongolia</div>
+                                  <div class="custom-option1" data-value="100">Myanmar</div>
+                                  <div class="custom-option1" data-value="101">Nauru</div>
+                                  <div class="custom-option1" data-value="102">Nepal</div>
+                                  <div class="custom-option1" data-value="103">New Zealand</div>
+                                  <div class="custom-option1" data-value="104">North Korea</div>
+                                  <div class="custom-option1" data-value="105">Oman</div>
+                                  <div class="custom-option1" data-value="106">Pakistan</div>
+                                  <div class="custom-option1" data-value="107">Palau</div>
+                                  <div class="custom-option1" data-value="108">Palestine</div>
+                                  <div class="custom-option1" data-value="109">Papua New Guinea</div>
+                              </div>
+                          </div>
+                          <input type="hidden" name="field_crm_industries1" id="field_crm_industries1" required>
+                      </div>
+  										<span class="field_country_c_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-email field--widget-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-email-wrapper" id="edit-email-wrapper"> 
+  											<div class="js-form-item form-item js-form-type-textfield form-item-email-0-value js-form-item-email-0-value">
+  												<label for="edit-email-0-value" class="js-form-required invisible form-required">Email</label>
+  												<input class="js-text-full text-full form-text required" data-drupal-selector="edit-email-0-value" type="text" id="edit-email-0-value" name="email[0][value]" value="" size="60" maxlength="255" placeholder="Email" required="required" aria-required="true">
+  											</div>
+  										</div>
+  										<span class="email_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-action-url field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-action-url-wrapper" id="edit-field-action-url-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-action-url-0-value" type="hidden" name="field_action_url[0][value]" value="https://ogilvygroupsbox.sugarondemand.com/index.php?entryPoint=WebToLeadCapture">
+  										</div>
+  										<span class="field_action_url_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-source-c field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-source-c-wrapper" id="edit-field-source-c-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-source-c-0-value" type="hidden" name="field_source_c[0][value]" value="Web Site">
+  										</div>
+  										<span class="field_source_c_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-source-group-c field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-source-group-c-wrapper" id="edit-field-source-group-c-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-source-group-c-0-value" type="hidden" name="field_source_group_c[0][value]" value="Ogilvy">
+  										</div>
+  										<span class="field_source_group_c_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-sourceitem-c field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-sourceitem-c-wrapper" id="edit-field-sourceitem-c-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-sourceitem-c-0-value" type="hidden" name="field_sourceitem_c[0][value]" value="">
+  										</div>
+  										<span class="field_sourceitem_c_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-status field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-status-wrapper" id="edit-field-status-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-status-0-value" type="hidden" name="field_status[0][value]" value="New">
+  										</div>
+  										<span class="field_status_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-f-path field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-f-path-wrapper" id="edit-field-f-path-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-f-path-0-value" type="hidden" name="field_f_path[0][value]" value="">
+  										</div>
+  										<span class="field_f_path_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-customer field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-customer-wrapper" id="edit-field-customer-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-customer-0-value" type="hidden" name="field_customer[0][value]" value="ch000097311eArad">
+  										</div>
+  										<span class="field_customer_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-dialogid field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-dialogid-wrapper" id="edit-field-dialogid-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-dialogid-0-value" type="hidden" name="field_dialogid[0][value]" value="">
+  										</div>
+  										<span class="field_dialogid_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-cke field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-cke-wrapper" id="edit-field-cke-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-cke-0-value" type="hidden" name="field_cke[0][value]" value="1">
+  										</div>
+  										<span class="field_cke_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-assigned-user-id field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-assigned-user-id-wrapper" id="edit-field-assigned-user-id-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-assigned-user-id-0-value" type="hidden" name="field_assigned_user_id[0][value]" value="1">
+  										</div>
+  										<span class="field_assigned_user_id_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-campaign-id field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-campaign-id-wrapper" id="edit-field-campaign-id-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-campaign-id-0-value" type="hidden" name="field_campaign_id[0][value]" value="0b20b7a8-5089-11e9-a3ae-022cc35525d8">
+  										</div>
+  										<span class="field_campaign_id_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-hidden-submit-from-website field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-hidden-submit-from-website-wrapper" id="edit-field-hidden-submit-from-website-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-hidden-submit-from-website-0-value" type="hidden" name="field_hidden_submit_from_website[0][value]" value="WebToLead">
+  										</div>
+  										<span class="field_hidden_submit_from_website_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-redirect-url field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-redirect-url-wrapper" id="edit-field-redirect-url-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-redirect-url-0-value" type="hidden" name="field_redirect_url[0][value]" value="https://www.ogilvy.com">
+  										</div>
+  										<span class="field_redirect_url_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-team-set-id field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-team-set-id-wrapper" id="edit-field-team-set-id-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-team-set-id-0-value" type="hidden" name="field_team_set_id[0][value]" value="1">
+  										</div>
+  										<span class="field_team_set_id_error error" style="display: none;"></span>
+  										<div class="field--type-string field--name-field-footer-connect-action-url field--widget-field-hidden-string-textfield js-form-wrapper form-wrapper" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-field-footer-connect-action-url-wrapper" id="edit-field-footer-connect-action-url-wrapper"> 
+  											<input class="js-text-full text-full field-hidden-string" data-drupal-selector="edit-field-footer-connect-action-url-0-value" type="hidden" name="field_footer_connect_action_url[0][value]" value="https://crmemails.ogilvy.com/api/forms/submit">
+  										</div>
+  										<span class="field_footer_connect_action_url_error error" style="display: none;"></span>
+  										<div data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper connect-submit connect-crm-submit" id="edit-actions--2">
+  											<input class="use-ajax button js-form-submit form-submit" data-drupal-selector="edit-send" type="submit" id="edit-send" name="op" value="Submit" data-once="drupal-ajax ajax">
+  										</div>
+  										<span class="actions_error error" style="display: none;"></span>
+  										<div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;">
+  											<div class="js-form-item form-item js-form-type-textfield form-item-url js-form-item-url">
+  												<label for="edit-url">Leave this field blank</label>
+  												<input autocomplete="off" data-twig-suggestion="content-entity-file-utility-add-form" data-drupal-selector="edit-url" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text">
+  											</div>
+  										</div>
+  										<div class="error-message error"></div>
+  										<div class="privacy-policy connect-legal-privacyPolicy">Please read our 
+  											<a target="_blank" href="#;">Privacy Policy</a> to see how we use your personal information.
+  										</div> 
+  									</form>
+  								</div>
+  							</div>
+  						</div>
+  					</article>
+  				</div>
+  			</div>
+  			<div class="popup-cookies-wrap is_active">
+  				<div class="cookies_clumn">
+  					<p>In order to interact with this feature, you must turn on Functional Cookies. Change your cookie preference below, and&nbsp;
+  						<a class="cookie_page_link" href="/cookies/">Click here</a>&nbsp;to read more about how we use cookies.
+  					</p>
+  					<div target="1" class="cookies_ani-border is_active active" id="form-functional-cookies-id">
+  						<span></span>
+  						<p style="">On</p>
+  					</div>
+  				</div>
+  			</div>
+  			<progress id="progress_bar" class="progress_bar_error" value="0" max="100"></progress>
+  			<div id="success-message" class="success-message nongated-success-message" style="display:none">
+  				<span>Thank you. You'll hear from us soon.</span>
+  			</div>
+  			<div id="success-message" class="success-message gated-success-message" style="display:none">
+  				<span>Thank you. Your requested content will appear in a new window.</span>
+  			</div>
+  		</div>
+  	</div>
 	
 
 
 
 
 
-	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-	<!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
-	<!-- თუ მინდა, რომ იმუშაოს toggler-მა bootstrap 5-ში, bootstrap.min.js უნდა გავთიშო -->
+	<script src="js/jQuery v3.6.0.min.js"></script>
 	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-	<!-- <script type="text/javascript" src="js/swiper-bundle.js"></script> -->
-	<script type="text/javascript" src="js/swiper-bundle.min.js"></script> <!-- The latest version -->
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<!-- <script type="text/javascript" src="js/baguetteBox.js"></script> -->
+	<script type="text/javascript" src="js/gsap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/TweenMax.min.js"></script> -->
+	<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+	<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/debug.addIndicators.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/swiper-bundle.min.js"></script> --> <!-- The latest version -->
+	<!-- <script type="text/javascript" src="js/slick.min.js"></script>  -->
 
+  <script type="text/javascript" src="js/script.js"></script>
 
-	<script type="text/javascript">
-		// page reload to the top of the screen
-		window.onbeforeunload = function () {
-			window.scrollTo(0, 0);
-		}
-	</script>
-
-
-	<!-- <script>
-		// prevent page reload
-		document.getElementById("searchInput").addEventListener("keydown", function(event) {
-			if (event.key === "Enter") {
-				event.preventDefault();
-			}
-		});
-	</script> -->
 
 
 
