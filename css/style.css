@@ -20,7 +20,7 @@ body{
     visibility: hidden;
     
     font-family: "ogilvysansregular", "ogilvysanslight", "ogilvysansregularitalic", "ogilvyserifregular", "ogilvyserifbold", "ogilvyserifregularitalic";
-    /*animation: load .25s .25s both;*/
+    animation: load .25s .25s both;
 }
 @-webkit-keyframes load{
     0%{
